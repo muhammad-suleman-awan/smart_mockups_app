@@ -6,7 +6,7 @@ const Body = ()=> {
   
     
   return (
-    <div style={styles.paperContainer}> 
+    <div > 
     </div>  )
 }
 
