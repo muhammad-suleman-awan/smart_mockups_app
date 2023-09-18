@@ -1,19 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from './components/Header';
-import '@fontsource/roboto/300.css';
+ import './App.css';
+ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css'; 
-
-
+import Index from './components/head/index.js'
+ 
 function App() {
   return (
-    <div className="App p--0"  
-    
-    >
-       <Header></Header> 
-     
+    <div>    
+    <Index/>
     </div>
   );
 }
