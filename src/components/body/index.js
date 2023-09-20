@@ -10,6 +10,9 @@ import Bodybackground from "./bodycomponent/bodybackground";
 import Btnbody2 from "./bodycomponent/body2background";
 import Mockupusing from "./bodycomponent/usingMockups";
 import Availablemockup from "./bodycomponent/availablemockup";
+import Guidemockup from "./bodycomponent/stepbystepguide";
+import Testimonial from "./bodycomponent/testimonialWebsites";
+
 const Bodyindex = () => {
   return (
     <>
@@ -24,6 +27,8 @@ const Bodyindex = () => {
          <Btnbody2 />
          <Mockupusing/>
          <Availablemockup />
+         <Guidemockup/>
+         <Testimonial/>
         </Grid>
       </Grid>
     </>

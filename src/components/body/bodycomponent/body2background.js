@@ -12,7 +12,7 @@ const Btnbody2 = () => {
         <Grid item xl={2}>
           <div class=" flex-column d-flex  ">
             <div class=" col-12">
-                <img src={HighQMimage}></img>
+              <img src={HighQMimage}></img>
             </div>
             <div class=" col-12">
               <h3>High-quality mockup images </h3>
@@ -28,7 +28,10 @@ const Btnbody2 = () => {
         </Grid>
         <Grid item bgcolor={" "} xl={2}>
           <div class=" flex-column d-flex  ">
-            <div class=" col-12"> <img src={UpVideog}></img> </div>
+            <div class=" col-12">
+              {" "}
+              <img src={UpVideog}></img>{" "}
+            </div>
             <div class=" col-12">
               <h3>Upload video or GIF</h3>
             </div>
@@ -44,7 +47,7 @@ const Btnbody2 = () => {
         <Grid item xl={2}>
           <div class=" flex-column d-flex  ">
             <div class=" col-12">
-                <img src={SshotUrl} ></img>
+              <img src={SshotUrl}></img>
             </div>
             <div class=" col-12">
               <h3>Screenshots from a URL</h3>
@@ -61,7 +64,7 @@ const Btnbody2 = () => {
         <Grid item xl={2}>
           <div class=" flex-column d-flex  ">
             <div class=" col-12">
-                <img src={SingleMultidevice}></img>
+              <img src={SingleMultidevice}></img>
             </div>
             <div class=" col-12">
               <h3>Single and multiple devices</h3>

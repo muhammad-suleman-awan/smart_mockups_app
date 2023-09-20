@@ -3,21 +3,24 @@ import images from "../../../assest/images/Header_Websites.png";
 import Button from "@mui/material/Button";
 
 const Bodybackground = () => {
+
+
   return (
     <div class="row py-5 d-flex justify-content-center  m-0 col-xl-12 col-lg-10 col-sm-1">
       <div class="col-xl-10 col-sm-4    ">
-        <div
+        <div class="bg-info"
            
           style={{
             backgroundImage: `url("${images}")`,
-
-            backgroundAttachment: "fixed",
-            backgroundPosition: "center",
-            backgroundSize: "100%",
-            backgroundRepeat: "no-repeat",
-            resize: "contain",
-            backgroundOrigin: "border-box",
-            backgroundAttachment: "local",
+            backgroundRepeat: 'round',
+            height:"500px"
+            // backgroundAttachment: "fixed",
+            // backgroundPosition: "center",
+            // backgroundSize: "60%",
+            // backgroundRepeat: "no-repeat",
+            // resize: "contain",
+            // backgroundOrigin: "border-box",
+            // backgroundAttachment: "local",
           }}
         >
           <div
