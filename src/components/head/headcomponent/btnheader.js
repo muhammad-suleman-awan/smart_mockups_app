@@ -29,19 +29,19 @@ const ButtonHeader = () => {
   ];
 
   return (
-    <div className="d-flex flex-column  overflow-auto py-3 px-2">
-      <Grid container>
-        {heade_btn.map((a, index) => (
-          <Grid item xl={1.5} xs={12} key={index} m={0} > 
-            <Button
-                variant="text" 
-                class="border-0 bg-success   text-black    d-flex flex-wrap white-space: nowrap"
-                style={{margin:"0"}}
-              >
-                {a.btn_label}
-              </Button> 
-          </Grid>
-        ))}
+    <div className="d-flex flex-column   overflow-auto ">
+      <Grid container >
+        <Grid
+          item
+          xs={12}
+          sx={{ display: "flex", gap: 2,  }}
+         >
+          {heade_btn.map((a, index) => (
+            <div key={index}>
+              <label>{a.btn_label}</label>
+            </div>
+          ))}
+        </Grid>
       </Grid>
     </div>
   );
