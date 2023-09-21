@@ -50,37 +50,37 @@ const otherdata = [
   },
 ];
 
-const help =[
-    {
-        title:"HELP"
-    },
-    {
-        faq:"FAQs"   
-    },
-    {
-        knowledge: "Knowledge Hub"
-    },
-    {
-        contact: "COntact"
-    }
-]
+const help = [
+  {
+    title: "HELP",
+  },
+  {
+    faq: "FAQs",
+  },
+  {
+    knowledge: "Knowledge Hub",
+  },
+  {
+    contact: "COntact",
+  },
+];
 
 const BottomFooter = () => {
   return (
-    <Grid container xl={12}>
-      <Grid
-        item
-        className="col-xl-6 align-item-center justify-content-end d-flex flex-column"
-      >
+    <Grid container xl={12} height={600}>
+      <Grid item className="col-xl-6 d-flex flex-column  ">
+        <div className="" style={{ position: " relative" }}>
+          <img
+            src={logoimg}
+            alt="Paris"
+            width="300"
+            height="100"
+            style={{ position: "absolute", top: "0px", left: "560px" }}
+          />
+        </div>
         {leftbottomtext.map((lefticondetail, id) => (
-          <div className="d-flex justify-content-center">
-            {/* {console.log("Here is show what is give IN",lefticondetail)}  */}
-            <img
-              className=""
-              srcSet={`${lefticondetail.img}`}
-              style={{ width: "200px", }}
-            />
-            <smal className="justify-content-center d-flex">
+          <div className=" mt-5">
+            <smal className="justify-content-center d-flex ">
               {lefticondetail.icon}
             </smal>
             <icon className="justify-content-center d-flex">
@@ -117,13 +117,13 @@ const BottomFooter = () => {
         ))}
       </Grid>
       <Grid item className="d-flex flex-column col-xl-2">
-                {help.map((helpData,index)=>(
-                    <div>
-        <h5>{helpData.title}</h5>
-        <small>{helpData.faq}</small>
-        <small>{helpData.knowledge}</small>
-        <small>{helpData.contact}</small>
-        </div>
+        {help.map((helpData, index) => (
+          <div>
+            <h5>{helpData.title}</h5>
+            <small>{helpData.faq}</small>
+            <small>{helpData.knowledge}</small>
+            <small>{helpData.contact}</small>
+          </div>
         ))}
       </Grid>
     </Grid>

@@ -6,7 +6,7 @@ import Availablemockupimg3 from "../../../assest/images/availablemkup3.png";
 
 const Guidemockup = () => {
   return (
-    <Grid container xl={12} justifyContent={"center"} >
+    <Grid container xl={12} justifyContent={"center"} mt={5} >
       <Grid item className=" col-xl-8    ">
         <div className="d-flex justify-content-center flex-column">
           <div className="col-xl-12 d-flex justify-content-center">
@@ -17,7 +17,7 @@ const Guidemockup = () => {
           </div>
         </div>
       </Grid>
-      <Grid item className="col-xl-8 d-flex flex-row   gap-2">
+      <Grid item className="col-xl-8 d-flex flex-row   gap-2 ">
          <div className=" col-xl-3">
           <div className="d-flex justify-content-center flex-column">
             <img src={Availablemockupimg1} height={380}></img>

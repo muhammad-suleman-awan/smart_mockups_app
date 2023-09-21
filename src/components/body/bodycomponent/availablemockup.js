@@ -37,7 +37,7 @@ const imagesofavaiablemockup = [
 ];
 const Availablemockup = () => {
   return (
-    <>
+    
       <Grid container mt={5} justifyContent={"center"}>
         <Grid item xl={9}>
           <div className="d-flex flex-column justify-content-center">
@@ -79,7 +79,7 @@ const Availablemockup = () => {
             </div>
         </Grid>
       </Grid>
-    </>
+     
   );
 };
 

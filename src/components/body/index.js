@@ -16,24 +16,44 @@ import Smartmockup from "./bodycomponent/smartmockup";
 import BottomFooter from "./bodycomponent/footer";
 
 const Bodyindex = () => {
+  const backgroundTop = 
+    {
+      topRow: "800+ Website Mockups",
+      middleRow:
+      "Create high-quality product images to promote your responsive web design across devices using Smartmockups website mockup generator. Choose a mockup, customize and download in seconds.",
+      endRowBtn: "👉 Start creating",
+      styleToprow: 'py-5 px-5 d-flex flexwrap-nowrap text-light',
+      styleMiddleRow: "px-5 d-flex flex-wrap text-light col-xl-3",
+      styleEndRowbtn: "bg-light mx-5 w-25"
+    }
+     
+    const backgroundBottom = {
+      topRow: "Get Start",
+      middleRow: "Create your first website mockup online with Smartmockups",
+      endRowBtn: "👉 Start creating",
+      styleToprow: 'py-5 px-5 d-flex flexwrap-nowrap text-light',
+      styleMiddleRow: "px-5 d-flex flex-wrap text-light col-xl-3",
+      styleEndRowbtn: "bg-light mx-5 w-25"
+    }
+   
   return (
     <>
-      <Grid container  >
-        <Grid
+      <Grid container>
+         <Grid
           item
           xl={12}
           sx={{ justifyContent: "flex-center" }}
           // bgcolor={"red"}
-        > 
-         <Bodybackground />  
-         <Btnbody2 />
-         <Mockupusing/>
-         <Availablemockup />
-         <Guidemockup/>
-         <Testimonial/>
-         <Bodybackground classNameforupprttext upp/>  
-        <Smartmockup/>
-        <BottomFooter/>
+        >
+          <Bodybackground data={backgroundTop}  />
+          <Btnbody2 />
+          <Mockupusing />
+          <Availablemockup />
+          <Guidemockup />
+          <Testimonial />
+           <Bodybackground data = {backgroundBottom}/>  
+          <Smartmockup />
+          <BottomFooter />
         </Grid>
       </Grid>
     </>

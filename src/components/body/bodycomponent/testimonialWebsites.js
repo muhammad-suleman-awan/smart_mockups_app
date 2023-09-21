@@ -26,10 +26,21 @@ const Testimonial = () => {
         style={backstyle}
       >
         <div
-          className="d-flex flex-row col-xl-2 h-50   position-absolute "
-          style={{ translate: "middle", top: "30%" , start:"100%"}}
+          className="d-flex flex-row col-xl-3    position-absolute bg-white "
+          style={{
+            translate: "middle",
+            top: "150px",
+            left: "218px",
+            height: "60%",
+          }}
         >
-        
+          <h5 className="px-5 py-5 col-xl-9">
+            "As designers, we can talk a lot about product design, user
+            experience etc. But if a client can't see themselves in any of that,
+            it doesn't exist. Smartmockups solves that problem for me. Every.
+            Single. Time."
+          </h5>
+          
         </div>
       </div>
     </div>

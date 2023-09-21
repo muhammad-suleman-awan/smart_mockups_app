@@ -22,7 +22,7 @@ const Mockupusing = () => {
                 graphic design or skills needed.
               </p>
             </div>
-            <div className=" col-xl-4 bg-info">
+            <div className=" col-xl-4 ">
                 <img src={collectionpic} height={390}></img>
             </div>
           </div>
