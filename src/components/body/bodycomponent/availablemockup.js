@@ -59,7 +59,7 @@ const Availablemockup = () => {
         <ImageListItem key={item.img}>
         
           <img
-            srcSet={`${item.image} `} 
+            srcSet={`${item.image}`} 
             loading="lazy"
             
           />
@@ -69,10 +69,10 @@ const Availablemockup = () => {
 
     </div>
         </Grid>
-        <Grid item  xl={9}>
+        <Grid item  xl={9} className="d-flex justify-content-center mb-5">
             <div classNameName="d-flex justify-content-center">
-            <div classNameName="mx-5 my-4 bd-highlight text-danger fs-5">
-              <Button variant="outlined" classNameName="bg-success">
+            <div classNameName="mx-5 my-4 bd-highlight text-danger fs-5 d-flex justify-content-center">
+              <Button variant="outlined" classNameName="bg-success d-flex justify-content-center">
                 👉 Create your first website mockup
               </Button>
             </div>

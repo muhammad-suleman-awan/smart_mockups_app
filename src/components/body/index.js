@@ -13,6 +13,7 @@ import Availablemockup from "./bodycomponent/availablemockup";
 import Guidemockup from "./bodycomponent/stepbystepguide";
 import Testimonial from "./bodycomponent/testimonialWebsites";
 import Smartmockup from "./bodycomponent/smartmockup";
+import BottomFooter from "./bodycomponent/footer";
 
 const Bodyindex = () => {
   return (
@@ -32,6 +33,7 @@ const Bodyindex = () => {
          <Testimonial/>
          <Bodybackground classNameforupprttext upp/>  
         <Smartmockup/>
+        <BottomFooter/>
         </Grid>
       </Grid>
     </>
