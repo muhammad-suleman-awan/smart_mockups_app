@@ -40,11 +40,11 @@ const Availablemockup = () => {
     <>
       <Grid container mt={5} justifyContent={"center"}>
         <Grid item xl={9}>
-          <div class="d-flex flex-column justify-content-center">
-            <div class="col-xl-12 d-flex justify-content-center">
+          <div className="d-flex flex-column justify-content-center">
+            <div className="col-xl-12 d-flex justify-content-center">
               <span>HUNDREDS OF MOCKUPS AVAILABLE</span>
             </div>
-            <div class="col-xl-12 d-flex justify-content-center">
+            <div className="col-xl-12 d-flex justify-content-center">
               <h1>
                 Discover inspiration in our ever-growing website mockup library
               </h1>
@@ -52,7 +52,7 @@ const Availablemockup = () => {
           </div>
         </Grid>
         <Grid item xl={9}  >
-                <div class="d-flex justify-content-center">
+                <div className="d-flex justify-content-center">
                 
         <ImageList sx={{ width: 1300, height: 600 }} cols={4}  >
       {imagesofavaiablemockup.map((item) => (
@@ -70,9 +70,9 @@ const Availablemockup = () => {
     </div>
         </Grid>
         <Grid item  xl={9}>
-            <div class="d-flex justify-content-center">
-            <div class="mx-5 my-4 bd-highlight text-danger fs-5">
-              <Button variant="outlined" class="bg-success">
+            <div classNameName="d-flex justify-content-center">
+            <div classNameName="mx-5 my-4 bd-highlight text-danger fs-5">
+              <Button variant="outlined" classNameName="bg-success">
                 👉 Create your first website mockup
               </Button>
             </div>

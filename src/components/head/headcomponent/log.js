@@ -10,7 +10,7 @@ const Piclogo = () => {
         container
         py={3.5}
         xs={12}
-        class="gap-4  d-flex justify-content-end"
+        className="gap-4  d-flex justify-content-end"
       >
         <Box
           component="img"

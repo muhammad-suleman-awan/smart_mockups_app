@@ -6,20 +6,20 @@ import Availablemockupimg3 from "../../../assest/images/availablemkup3.png";
 
 const Guidemockup = () => {
   return (
-    <Grid container xl={12} justifyContent={"center"}>
-      <Grid item class=" col-xl-8  ">
-        <div class="d-flex justify-content-center flex-column">
-          <div class="col-xl-12 d-flex justify-content-center">
+    <Grid container xl={12} justifyContent={"center"} >
+      <Grid item className=" col-xl-8    ">
+        <div className="d-flex justify-content-center flex-column">
+          <div className="col-xl-12 d-flex justify-content-center">
             <span>YOUR STEP-BY-STEP GUIDE</span>
           </div>
-          <div class="col-xl-12 d-flex justify-content-center">
+          <div className="col-xl-12 d-flex justify-content-center">
             <h2>Three easy steps to your first mockup</h2>
           </div>
         </div>
       </Grid>
-      <Grid item class="col-xl-8 d-flex flex-row justify-content-center gap-4">
-        <div class=" col-xl-3">
-          <div class="d-flex justify-content-center flex-column">
+      <Grid item className="col-xl-8 d-flex flex-row   gap-2">
+         <div className=" col-xl-3">
+          <div className="d-flex justify-content-center flex-column">
             <img src={Availablemockupimg1} height={380}></img>
             <h4>1. Find your favorite website mockup</h4>
             <p>
@@ -28,7 +28,7 @@ const Guidemockup = () => {
             </p>
           </div>
         </div>
-        <div class="  col-xl-4">
+        <div className="  col-xl-4">
           <div>
              <img src={Availablemockupimg2} height={380}></img>
             <h4>2. Upload your design and customize the mockup</h4>
@@ -39,7 +39,7 @@ const Guidemockup = () => {
             </p>
           </div>
         </div>
-        <div class="  col-xl-4">
+        <div className="  col-xl-4">
           <div>
              <img src={Availablemockupimg3} height={380}></img>
             <h4>3. Download the final image</h4>
@@ -49,8 +49,8 @@ const Guidemockup = () => {
             </p>
           </div>
 
-        </div>
-      </Grid>
+        </div>  
+      </Grid> 
     </Grid>
   );
 };

@@ -5,7 +5,7 @@ import Stack from "@mui/material/Stack";
 
 const LoginButton = () => {
   return (
-    <div class="">
+    <div className="">
       <Grid container sx={{ }} >
         <Grid item xs={12} >
           <Stack 
@@ -16,7 +16,7 @@ const LoginButton = () => {
           >
             <Button
               variant="outlined"
-              class=" bg-white text-black border-2 border-light  "
+              classNameName=" bg-white text-black border-2 border-light  "
             >
               <Typography
                 style={{
@@ -32,7 +32,7 @@ const LoginButton = () => {
             </Button>
             <Button
               variant="outlined"
-              class="  text-white border-1  border-light 
+              classNameName="  text-white border-1  border-light 
              rounded"
               style={{
                 backgroundColor: "rgb(255, 102, 0)",

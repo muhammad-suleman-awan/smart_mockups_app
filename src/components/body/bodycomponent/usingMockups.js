@@ -4,10 +4,10 @@ import collectionpic from "../../../assest/images/Collection_Header_Websites.png
 const Mockupusing = () => {
   return (
     <>
-      <Grid container class=" col-12">
+      <Grid container className=" col-12">
         <Grid item>
-          <div class="d-flex flex-row justify-content-center gap-5 ">
-            <div class="  col-xl-4">
+          <div className="d-flex flex-row justify-content-center gap-5 ">
+            <div className="  col-xl-4">
               <span>USING MOCKUPS</span>
               <h3> Bring your design to life and impress your client</h3>
               <p>
@@ -22,7 +22,7 @@ const Mockupusing = () => {
                 graphic design or skills needed.
               </p>
             </div>
-            <div class=" col-xl-4 bg-info">
+            <div className=" col-xl-4 bg-info">
                 <img src={collectionpic} height={390}></img>
             </div>
           </div>
