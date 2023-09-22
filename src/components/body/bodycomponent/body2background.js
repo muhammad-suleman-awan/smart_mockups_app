@@ -4,82 +4,140 @@ import HighQMimage from "../../../assest/logo/High-quality mockup images.png";
 import UpVideog from "../../../assest/logo/Upload video or GIF.png";
 import SshotUrl from "../../../assest/logo/Screenshots from a URL.png";
 import SingleMultidevice from "../../../assest/logo/Single and multiple devices.png";
+import { Box, Typography } from "@mui/material";
+import ImageListItem from "@mui/material/ImageListItem";
+import { Padding } from "@mui/icons-material";
 
 const Btnbody2 = () => {
   return (
-    <>
-      <Grid container justifyContent={"center"} gap={5} py={5}>
-        <Grid item xl={2}>
-          <div classNameName=" flex-column d-flex  ">
-            <div classNameName=" col-12">
-              <img src={HighQMimage}></img>
-            </div>
-            <div className=" col-12">
-              <h3>High-quality mockup images </h3>
-            </div>
-            <div className="  col-12">
-              <span>
-                With Smartmockups you can upload GIFs and videos to bring your
-                website and app to life. No flat, boring presentations for your
-                work!
-              </span>
-            </div>
-          </div>
-        </Grid>
-        <Grid item bgcolor={" "} xl={2}>
-          <div className=" flex-column d-flex  ">
-            <div className=" col-12">
-              {" "}
-              <img src={UpVideog}></img>{" "}
-            </div>
-            <div className=" col-12">
-              <h3>Upload video or GIF</h3>
-            </div>
-            <div className="  col-12">
-              <span>
-                With Smartmockups you can upload GIFs and videos to bring your
-                website and app to life. No flat, boring presentations for your
-                work!
-              </span>
-            </div>
-          </div>
-        </Grid>
-        <Grid item xl={2}>
-          <div className=" flex-column d-flex  ">
-            <div className=" col-12">
-              <img src={SshotUrl}></img>
-            </div>
-            <div className=" col-12">
-              <h3>Screenshots from a URL</h3>
-            </div>
-            <div className="  col-12">
-              <span>
-                Show off any page of a website by simply typing the URL and
-                adding a browser. Save yourself time and let Smartmockups do the
-                work.
-              </span>
-            </div>
-          </div>
-        </Grid>
-        <Grid item xl={2}>
-          <div className=" flex-column d-flex  ">
-            <div className=" col-12">
-              <img src={SingleMultidevice}></img>
-            </div>
-            <div className=" col-12">
-              <h3>Single and multiple devices</h3>
-            </div>
-            <div className="  col-12">
-              <span>
-                Explore our library of mockups ranging from laptops and desktops
-                to smartphones, in all operating systems. Plus, we've got
-                responsive mockup sets and screens, too.
-              </span>
-            </div>
-          </div>
-        </Grid>
+    <Grid
+      container
+      justifyContent={"center"}
+      gap={2}
+      className="  col-xl-6"
+      xl={12}
+      sx={{ marginTop: { xl: "130px" } }}
+    >
+      <Grid item className="" xl={2}>
+        <ImageListItem
+          className=""
+          sx={{ width: { xl: "32%" }, marginLeft: { xl: "29%" } }}
+        >
+          <img src={HighQMimage} className=""></img>
+        </ImageListItem>
+        <Typography
+          variant="body2"
+          sx={{
+            paddingTop: { xl: "7%" },
+            paddingLeft: { xl: "0px" },
+            fontSize: { xl: "1.2em" },
+            lineHeight: { xl: "1.6666666667em" },
+          }}
+        >
+          High-quality mockup images
+        </Typography>
+        <Typography
+          variant="body2"
+          sx={{
+            paddingTop: { xl: "4%" },
+            paddingLeft: { xl: "0px" },
+            fontWeight: { xl: "400" },
+          }}
+        >
+          With Smartmockups you can upload GIFs and videos to bring your website
+          and app to life. No flat, boring presentations for your work!
+        </Typography>
       </Grid>
-    </>
+      <Grid item className="" xl={2}>
+        <ImageListItem
+          className=""
+          sx={{ width: { xl: "32%" }, marginLeft: { xl: "29%" } }}
+        >
+          <img src={UpVideog} className=""></img>
+        </ImageListItem>
+        <Typography
+          variant="body2"
+          sx={{
+            paddingTop: { xl: "7%" },
+            paddingLeft: { xl: "0px" },
+            fontSize: { xl: "1.2em" },
+            lineHeight: { xl: "1.6666666667em" },
+          }}
+        >
+          Upload video or GIF
+        </Typography>
+        <Typography
+          variant="body2"
+          sx={{
+            paddingTop: { xl: "4%" },
+            paddingLeft: { xl: "0px" },
+            fontWeight: { xl: "400" },
+          }}
+        >
+          With Smartmockups you can upload GIFs and videos to bring your website and app to life. No flat, boring presentations for your work!
+        </Typography>
+      </Grid>
+      <Grid item className="" xl={2}>
+        <ImageListItem
+          className=""
+          sx={{ width: { xl: "32%" }, marginLeft: { xl: "29%" } }}
+        >
+          <img src={SshotUrl} className=""></img>
+        </ImageListItem>
+        <Typography
+          variant="body2"
+          sx={{
+            paddingTop: { xl: "7%" },
+            paddingLeft: { xl: "0px" },
+            fontSize: { xl: "1.2em" },
+            lineHeight: { xl: "1.6666666667em" },
+          }}
+        >
+          Screenshots from a URL
+        </Typography>
+        <Typography
+          variant="body2"
+          sx={{
+            paddingTop: { xl: "4%" },
+            paddingLeft: { xl: "0px" },
+            fontWeight: { xl: "400" },
+          }}
+        >
+          Show off any page of a website by simply typing the URL and adding a browser. Save yourself time and let Smartmockups do the work.
+        </Typography>
+      </Grid>
+      <Grid item className="" xl={2}>
+        <ImageListItem
+          className=""
+          sx={{ width: { xl: "32%" }, marginLeft: { xl: "29%" } }}
+        >
+          <img src={SingleMultidevice} className=""></img>
+        </ImageListItem>
+        <Typography
+          variant="body2"
+          sx={{
+            paddingTop: { xl: "7%" },
+            paddingLeft: { xl: "0px" },
+            fontSize: { xl: "1.2em" },
+            lineHeight: { xl: "1.6666666667em" },
+          }}
+        >
+          Single and multiple devices
+        </Typography>
+        <Typography
+          variant="body2"
+          sx={{
+            paddingTop: { xl: "4%" },
+            paddingLeft: { xl: "0px" },
+            fontWeight: { xl: "400" },
+          }} 
+        >
+          Explore our library of mockups ranging from laptops and desktops to smartphones, in all operating systems. Plus, we've got responsive mockup sets and screens, too.
+        </Typography>
+      </Grid>
+      
+      
+    </Grid>
   );
 };
 

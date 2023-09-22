@@ -2,6 +2,7 @@ import React from "react";
 import { Grid, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
+import { red } from "@mui/material/colors";
 
 const ButtonHeader = () => {
   const heade_btn = [
@@ -29,25 +30,27 @@ const ButtonHeader = () => {
   ];
 
   return (
-    <div className="d-flex flex-column   overflow-auto ">
+    <div className="d-flex flex-column   overflow-auto  ">
       <Grid
         container
         sx={{
-          paddingTop: { xl: 1.2, lg: 2 },
-          paddingLeft: { xl: 8 },
+          paddingTop: { xl: 1.5, lg: 2 },
+          paddingLeft: { xl: 0 },
           justifyContent: { lg: "center" },
+          
         }}
       >
         <Grid
           item
           xs={12}
-          sx={{ display: "flex", gap: 2, justifyContent: { lg: "center" } }}
+          sx={{ display: "flex", gap: 4.5,top: { xl: "5"}  ,  justifyContent: { xl:"left", lg: "center" }, paddingLeft: {xl:6} }}
+          
         >
           {heade_btn.map((a, index) => (
-            <div key={index} className=" h5 ">
+            <div key={index} className=" ">
               <label
-                className="  px-xl-3 font-bold-xl"
-                style={{ borderRadius: "4px" }}
+                className="  px-xl-0 top-5 "
+                style={{ borderRadius: "0px" }}
               >
                 {a.btn_label}
               </label>

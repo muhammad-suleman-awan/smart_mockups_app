@@ -4,7 +4,7 @@ import collectionpic from "../../../assest/images/Collection_Header_Websites.png
 const Mockupusing = () => {
   return (
     <>
-      <Grid container className=" col-12">
+      <Grid container className=" col-12"  sx={{ marginTop: { xl: "140px" } }}>
         <Grid item>
           <div className="d-flex flex-row justify-content-center gap-5 ">
             <div className="  col-xl-4">

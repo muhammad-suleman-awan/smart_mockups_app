@@ -1,48 +1,55 @@
 import React from "react";
 import images from "../../../assest/images/Header_Websites.png";
 import Button from "@mui/material/Button";
+import { Box, Typography } from "@mui/material";
+import { red } from "@mui/material/colors";
 
 const Bodybackground = ({ data }) => {
-  console.log('data', data)
   return (
-    <div className="row py-5 d-flex justify-content-center  m-0 col-xl-12 col-lg-10 col-sm-1">
-       
-      <div className="col-xl-10 col-sm-4    ">
-        <div
-          className=""
-          style={{
-            backgroundImage: `url("${images}")`,
-            backgroundRepeat: "round",
-            height: "500px",
+    <Box
+      className="row d-flex justify-content-center  col-xl-12 col-lg-10 col-sm-1"
+      sx={{
+        paddingTop: { xl: "3.3%" },
+        height: { xl: "17.7%" },
+      }}
+    >
+      {/* <Box className="col-xl-10 col-sm-4    "> */}
+      <Box
+        className=""
+        style={{
+          backgroundImage: `url("${images}")`,
+          backgroundRepeat: "round",
+        }}
+        sx={{
+          width: { xl: "80%" },
+          // left: { xl:"30%"},
+          position: "relative",
+        }}
+      >
+        <Box
+          className="text-white  "
+          sx={{
+            position: "absolute",
+            width: { xl: "40%" },
+            top: { xl: "25%" },
+            left: { xl: "7%" },
           }}
         >
-          
-         
+          <Typography variant="body2" sx={data.toprowStyle}>
+            {data.topRow}
+          </Typography>
 
-          <div className="d-flex flex-column col-xl-12 px-5 pt-5  " style={{}}>
-  
+          <Typography variant="body2" sx={data.toprowMiddle}>
+          {data.middleRow}
+          </Typography>
+          <Button variant="outlined" sx={data.toprowBottom}>👉 {data.endRowBtn}</Button>
 
-          
-              <div key={indexedDB} >
-              <h5 className={data.styleToprow}>
-                {data.topRow}
-            </h5>
-     
-            <p className={data.styleMiddleRow}>
-              {data.middleRow}
-            </p>
-            </div>
+           
+        </Box>
 
-            <Button variant="outlined" className={data.styleEndRowbtn}>
-                {data.endRowBtn}
-            </Button>
-            
-          
-
-          </div>
-        </div>
-      </div>
-    </div>
+      </Box>
+      {/* </Box> */}
+    </Box>
   );
 };
 

@@ -16,42 +16,58 @@ import Smartmockup from "./bodycomponent/smartmockup";
 import BottomFooter from "./bodycomponent/footer";
 
 const Bodyindex = () => {
-  const backgroundTop = 
-    {
-      topRow: "800+ Website Mockups",
-      middleRow:
+  const backgroundTop = {
+    topRow: "800+ Website Mockups",
+    middleRow:
       "Create high-quality product images to promote your responsive web design across devices using Smartmockups website mockup generator. Choose a mockup, customize and download in seconds.",
-      endRowBtn: "👉 Start creating",
-      styleToprow: 'py-5 px-5 d-flex flexwrap-nowrap text-light',
-      styleMiddleRow: "px-5 d-flex flex-wrap text-light col-xl-3",
-      styleEndRowbtn: "bg-light mx-5 w-25"
-    }
-     
-    const backgroundBottom = {
-      topRow: "Get Start",
-      middleRow: "Create your first website mockup online with Smartmockups",
-      endRowBtn: "👉 Start creating",
-      styleToprow: 'py-5 px-5 d-flex flexwrap-nowrap text-light',
-      styleMiddleRow: "px-5 d-flex flex-wrap text-light col-xl-3",
-      styleEndRowbtn: "bg-light mx-5 w-25"
-    }
-   
+    endRowBtn: "Start creating",
+    styleToprow: "bg-danger",
+    styleMiddleRow: "px-5 d-flex flex-wrap text-light col-xl-3",
+    styleEndRowbtn: "bg-light mx-5 w-25",
+    toprowStyle: {    fontSize: {xl:"3.33333em"},
+    lineHeight: {xl:"1.24em"}, fontWeight: {xl:"700"} },
+    toprowMiddle: {
+      fontSize: {xl:"1.2em"},
+      lineHeight: {xl:"1.66667em"},
+      paddingTop: { xl: "20px" },
+      textAlign: "left",
+      
+    },
+    toprowBottom: {
+      marginTop: { xl: "50px" },
+      backgroundColor: { xl: "white" },
+      color: { xl: "black" },
+      fontSize: {xl:"1rem"},
+      lineHeight: {xl:"1.5"},
+      width: { xl: "40%" },
+    },
+  };
+
+  const backgroundBottom = {
+    topRow: "Get Start",
+    middleRow: "Create your first website mockup online with Smartmockups",
+    endRowBtn: "👉 Start creating",
+    styleToprow: "py-5 px-5 d-flex flexwrap-nowrap text-light",
+    styleMiddleRow: "px-5 d-flex flex-wrap text-light col-xl-3",
+    styleEndRowbtn: "bg-light mx-5 w-25",
+  };
+
   return (
     <>
       <Grid container>
-         <Grid
+        <Grid
           item
           xl={12}
           sx={{ justifyContent: "flex-center" }}
           // bgcolor={"red"}
         >
-          <Bodybackground data={backgroundTop}  />
+          <Bodybackground data={backgroundTop} />
           <Btnbody2 />
           <Mockupusing />
           <Availablemockup />
           <Guidemockup />
           <Testimonial />
-           <Bodybackground data = {backgroundBottom}/>  
+          {/* <Bodybackground data = {backgroundBottom}/>   */}
           <Smartmockup />
           <BottomFooter />
         </Grid>
