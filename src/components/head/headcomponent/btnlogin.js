@@ -13,7 +13,7 @@ const LoginButton = () => {
             direction="row"
            
             sx={{  
-              marginLeft: {xl:'180px', } ,
+              marginLeft: {xl:'0px', } ,
               justifyContent:{lg:'flex-end'}
               
               }}
@@ -22,7 +22,8 @@ const LoginButton = () => {
               variant="outlined"
               classNameName=" bg-white text-black border border-5 text-uppercase "
               sx={{
-                width:{lg:"90px"}
+                width:{lg:"100px"}
+
               }}
             >
               <Typography

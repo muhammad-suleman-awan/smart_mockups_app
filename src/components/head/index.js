@@ -6,8 +6,8 @@ import Piclogo from "./headcomponent/log.js";
 const Index = () => {
   return (
     <div>
-      <Grid container  sx={{ boxShadow: "10", 
-       }}  padding={{xl:3, lg:2}}>
+      <Grid container  sx={{ boxShadow: "8", 
+       }}  padding={{xl:2, lg:2}}  >
         <Grid item xl={1.5} lg={6} md={6}  order={{ xs: 1, lg: 1 }} >
           <Piclogo> </Piclogo>
         </Grid>
