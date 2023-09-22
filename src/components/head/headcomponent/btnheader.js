@@ -30,15 +30,27 @@ const ButtonHeader = () => {
 
   return (
     <div className="d-flex flex-column   overflow-auto ">
-      <Grid container >
+      <Grid
+        container
+        sx={{
+          paddingTop: { xl: 1.2, lg: 2 },
+          paddingLeft: { xl: 8 },
+          justifyContent: { lg: "center" },
+        }}
+      >
         <Grid
           item
           xs={12}
-          sx={{ display: "flex", gap: 2,  }}
-         >
+          sx={{ display: "flex", gap: 2, justifyContent: { lg: "center" } }}
+        >
           {heade_btn.map((a, index) => (
-            <div key={index}>
-              <label>{a.btn_label}</label>
+            <div key={index} className=" h5 ">
+              <label
+                className="  px-xl-3 font-bold-xl"
+                style={{ borderRadius: "4px" }}
+              >
+                {a.btn_label}
+              </label>
             </div>
           ))}
         </Grid>

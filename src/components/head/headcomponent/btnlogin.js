@@ -7,40 +7,49 @@ const LoginButton = () => {
   return (
     <div className="">
       <Grid container sx={{ }} >
-        <Grid item xs={12} >
+        <Grid item xs={12} lg={12}  >
           <Stack 
-            spacing={1}
+            spacing={2}
             direction="row"
            
-            sx={{ justifyContent: "start" }}
+            sx={{  
+              marginLeft: {xl:'180px', } ,
+              justifyContent:{lg:'flex-end'}
+              
+              }}
           >
             <Button
               variant="outlined"
-              classNameName=" bg-white text-black border-2 border-light  "
+              classNameName=" bg-white text-black border border-5 text-uppercase "
+              sx={{
+                width:{lg:"90px"}
+              }}
             >
               <Typography
                 style={{
                   fontWeight: "8px",
                   display: "flex",
                   fontStyle: "8px",
-                  flexWrap: "nowrap",
-                  letterSpacing: -1,
+                  flexWrap: "nowrap", 
                 }}
               >
-                Sign In
+               <span className="text-uppercase text-black ">Sign In</span> 
               </Typography>
             </Button>
             <Button
               variant="outlined"
-              classNameName="  text-white border-1  border-light 
-             rounded"
+              classNameName="text-white border-0  border-light  rounded"
               style={{
                 backgroundColor: "rgb(255, 102, 0)",
-                letterSpacing: -1,
-                fontStyle: "8px",
+                fontWeight: "15px",
+                  display: "flex",
+                fontStyle: "15px",
+              }}
+              sx={{
+                width:{lg:'200px'}
               }}
             >
-              Get started For Free
+              <label className="text-white d-flex flex-nowrap">Get started For Free</label>
             </Button>
           </Stack>
         </Grid>
