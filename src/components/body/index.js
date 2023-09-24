@@ -15,6 +15,7 @@ import Testimonial from "./bodycomponent/testimonialWebsites";
 import Smartmockup from "./bodycomponent/smartmockup";
 import BottomFooter from "./bodycomponent/footer";
 
+
 const Bodyindex = () => {
   const backgroundTop = {
     topRow: "800+ Website Mockups",

@@ -1,4 +1,11 @@
-import { Button, Grid, ImageList, ImageListItem } from "@mui/material";
+import {
+  Box,
+  Button,
+  Grid,
+  ImageList,
+  ImageListItem,
+  Typography,
+} from "@mui/material";
 import React from "react";
 import img1 from "../../../assest/images/1.jpg";
 import img2 from "../../../assest/images/2.jpg";
@@ -37,49 +44,90 @@ const imagesofavaiablemockup = [
 ];
 const Availablemockup = () => {
   return (
-    
-      <Grid container mt={5} justifyContent={"center"}>
-        <Grid item xl={9}>
-          <div className="d-flex flex-column justify-content-center">
-            <div className="col-xl-12 d-flex justify-content-center">
-              <span>HUNDREDS OF MOCKUPS AVAILABLE</span>
-            </div>
-            <div className="col-xl-12 d-flex justify-content-center">
-              <h1>
-                Discover inspiration in our ever-growing website mockup library
-              </h1>
-            </div>
-          </div>
-        </Grid>
-        <Grid item xl={9}  >
-                <div className="d-flex justify-content-center">
-                
-        <ImageList sx={{ width: 1300, height: 600 }} cols={4}  >
-      {imagesofavaiablemockup.map((item) => (
-        <ImageListItem key={item.img}>
-        
-          <img
-            srcSet={`${item.image}`} 
-            loading="lazy"
-            
-          />
-        </ImageListItem>
-      ))}
-    </ImageList>
-
-    </div>
-        </Grid>
-        <Grid item  xl={9} className="d-flex justify-content-center mb-5">
-            <div classNameName="d-flex justify-content-center">
-            <div classNameName="mx-5 my-4 bd-highlight text-danger fs-5 d-flex justify-content-center">
-              <Button variant="outlined" classNameName="bg-success d-flex justify-content-center">
-                👉 Create your first website mockup
-              </Button>
-            </div>
-            </div>
-        </Grid>
+    <Grid
+      container
+      sx={{ marginTop: { xl: "150px" } }}
+      justifyContent={"center"}
+    >
+      <Grid item xl={9} className=" justify-content-center d-flex flex-column">
+        <Typography
+          className="d-flex "
+          justifyContent={"center"}
+          sx={{
+            textTransform: "uppercase",
+            marginBottom: { xl: "8px" },
+            color: "#a7a7a7",
+          }}
+        >
+          HUNDREDS OF MOCKUPS AVAILABLE
+        </Typography>
+        <Typography
+          variant="h2"
+          className="d-flex justify-content-center "
+          sx={{
+            marginBottom: { xl: "80px" },
+            fontSize: "2.4em",
+            lineHeight: "1.33333333em",
+            fontWeight: "700",
+            textAlign: "center",
+            paddingLeft: { xl: "20px" },
+          }}
+        >
+          Discover inspiration in our ever-growing<br></br> website mockup
+          library
+        </Typography>
       </Grid>
-     
+      <Grid item xl={8} className=" ">
+        <Box className="d-flex justify-content-center  ">
+          <ImageList
+            sx={{ xl: { width: "50%" } }}
+            className=" "
+            cols={4}
+            gap={12}
+          >
+            {imagesofavaiablemockup.map((item) => (
+              <ImageListItem
+                sx={{
+                  xl: { width: "280px" },
+                  xl: { height: "100%" },
+                  xl: { borderRadius: "5px" },
+                }}
+              >
+                <img srcSet={`${item.image}`} />
+              </ImageListItem>
+            ))}
+          </ImageList>
+        </Box>
+      </Grid>
+      <Grid item xl={9} className="d-flex justify-content-center  ">
+        <Button
+        
+   variant="outlined"
+   sx={{  background: { xl: "#00bd28" },color: { xl: "#fff" },     fontSize:{xl:"1rem"},
+            padding:{xl:"12px 0px"},
+            lineHeight:{xl:"1.5"},
+            width:{xl:"24%"}
+            }}
+        >
+          <Typography        sc={{
+    
+        
+          }} > 👉 Create your first website mockup</Typography>
+        </Button>
+
+        {/* <div classNameName="d-flex justify-content-center">
+          <div classNameName="mx-5 my-4 bd-highlight text-danger fs-5 d-flex justify-content-center">
+            <Button
+              variant="outlined"
+              classNameName="d-flex justify-content-center"
+             style={{background:"#00bd28",}}
+             
+            >
+            </Button>
+          </div>
+        </div> */}
+      </Grid>
+    </Grid>
   );
 };
 
