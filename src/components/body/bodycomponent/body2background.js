@@ -26,12 +26,13 @@ const Btnbody2 = () => {
           <img src={HighQMimage} className=""></img>
         </ImageListItem>
         <Typography
-          variant="body2"
+          variant="h3"
           sx={{
             paddingTop: { xl: "7%" },
             paddingLeft: { xl: "0px" },
             fontSize: { xl: "1.2em" },
             lineHeight: { xl: "1.6666666667em" },
+            textAlign:"center"
           }}
         >
           High-quality mockup images
@@ -44,8 +45,7 @@ const Btnbody2 = () => {
             fontWeight: { xl: "400" },
           }}
         >
-          With Smartmockups you can upload GIFs and videos to bring your website
-          and app to life. No flat, boring presentations for your work!
+         Choose from professional lifestyle images or isolated 3D renders to create engaging product presentations.
         </Typography>
       </Grid>
       <Grid item className="" xl={2}>
@@ -56,12 +56,14 @@ const Btnbody2 = () => {
           <img src={UpVideog} className=""></img>
         </ImageListItem>
         <Typography
-          variant="body2"
+          variant="h3"
           sx={{
             paddingTop: { xl: "7%" },
             paddingLeft: { xl: "0px" },
             fontSize: { xl: "1.2em" },
             lineHeight: { xl: "1.6666666667em" },
+            textAlign:"center"
+
           }}
         >
           Upload video or GIF
@@ -72,6 +74,8 @@ const Btnbody2 = () => {
             paddingTop: { xl: "4%" },
             paddingLeft: { xl: "0px" },
             fontWeight: { xl: "400" },
+                        textAlign:"center"
+
           }}
         >
           With Smartmockups you can upload GIFs and videos to bring your website and app to life. No flat, boring presentations for your work!
@@ -85,12 +89,14 @@ const Btnbody2 = () => {
           <img src={SshotUrl} className=""></img>
         </ImageListItem>
         <Typography
-          variant="body2"
+          variant="h3"
           sx={{
             paddingTop: { xl: "7%" },
             paddingLeft: { xl: "0px" },
             fontSize: { xl: "1.2em" },
             lineHeight: { xl: "1.6666666667em" },
+            textAlign:"center"
+
           }}
         >
           Screenshots from a URL
@@ -114,12 +120,14 @@ const Btnbody2 = () => {
           <img src={SingleMultidevice} className=""></img>
         </ImageListItem>
         <Typography
-          variant="body2"
+          variant="h3"
           sx={{
             paddingTop: { xl: "7%" },
             paddingLeft: { xl: "0px" },
             fontSize: { xl: "1.2em" },
             lineHeight: { xl: "1.6666666667em" },
+            textAlign:"center"
+
           }}
         >
           Single and multiple devices

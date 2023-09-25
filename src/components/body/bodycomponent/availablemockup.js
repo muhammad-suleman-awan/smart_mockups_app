@@ -99,7 +99,7 @@ const Availablemockup = () => {
           </ImageList>
         </Box>
       </Grid>
-      <Grid item xl={9} className="d-flex justify-content-center  ">
+      <Grid item xl={9} className="d-flex justify-content-center py-5 ">
         <Button
         
    variant="outlined"

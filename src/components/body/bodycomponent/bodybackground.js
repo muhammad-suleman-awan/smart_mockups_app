@@ -10,7 +10,7 @@ const Bodybackground = ({ data }) => {
       className="row d-flex justify-content-center  col-xl-12 col-lg-10 col-sm-1"
       sx={{
         paddingTop: { xl: "3.3%" },
-        height: { xl: "17.7%" },
+        height: { xl: "15.2%" },
       }}
     >
       {/* <Box className="col-xl-10 col-sm-4    "> */}
@@ -21,13 +21,14 @@ const Bodybackground = ({ data }) => {
           backgroundRepeat: "round",
         }}
         sx={{
-          width: { xl: "80%" },
+          width: { xl: "81%" },
           // left: { xl:"30%"},
           position: "relative",
+          marginLeft:{xl:"20px"}
         }}
       >
         <Box
-          className="text-white  "
+          className="text-white "
           sx={{
             position: "absolute",
             width: { xl: "40%" },
@@ -39,10 +40,10 @@ const Bodybackground = ({ data }) => {
             {data.topRow}
           </Typography>
 
-          <Typography variant="body2" sx={data.toprowMiddle}>
+          <Typography variant={data.variantValue} sx={data.toprowMiddle}>
           {data.middleRow}
           </Typography>
-          <Button variant="outlined" sx={data.toprowBottom}>👉 {data.endRowBtn}</Button>
+          <Button variant="text" sx={data.toprowBottom}>👉 {data.endRowBtn}</Button>
 
            
         </Box>

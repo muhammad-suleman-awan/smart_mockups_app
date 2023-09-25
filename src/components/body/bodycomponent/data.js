@@ -22,6 +22,4 @@ export  const dataforstep = [
         "Once you’ve completed your mockup, download to save it. Congratulations on your first website presentation mockup.",
     },
   ];
-
-  export const appname= "My first app"
-
+ 

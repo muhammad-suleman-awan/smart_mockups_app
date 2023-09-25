@@ -6,6 +6,7 @@ import Availablemockupimg3 from "../../../assest/images/availablemkup3.png";
 import { Button } from "bootstrap";
 import { dataforstep, appname } from "./data";
 import { Box, ImageList, ImageListItem, Typography } from "@mui/material";
+import { blueGrey } from "@mui/material/colors";
 const Guidemockup = () => {
   return (
     <Grid
@@ -14,9 +15,11 @@ const Guidemockup = () => {
       justifyContent={"center"}
       mt={5}
       clas
-      sx={{ marginTop: { xl: "120px" } }}
+      sx={{ marginTop: { xl: "115px" },   }}
+       
     >
       <Grid item className=" col-xl-8    ">
+
         <Typography
           className="col-xl-12 d-flex justify-content-center"
           sx={{
@@ -34,32 +37,59 @@ const Guidemockup = () => {
         </Typography>
         <Typography
           className="col-xl-12 d-flex justify-content-center"
-          sx={{ marginBottom: { xl: "40px" },fontSize: {xl:'2.4em'},lineHeight:{xl:"1.333333333em"},
-          fontWeight:{xl:"700"} }}
-          
+          sx={{
+            marginBottom: { xl: "80px" },
+            fontSize: { xl: "2.4em" },
+            lineHeight: { xl: "1.333333333em" },
+            fontWeight: { xl: "700" },
+          }}
         >
           Three easy steps to your first mockup
         </Typography>
       </Grid>
-      <Grid item className="col-xl-8 d-flex  ">
-        <ImageList className="  d-flex" gap={100}>
+      <Grid
+        item
+        className="d-flex "
+          xl={8.1}
+           >
+        <ImageList
+          className="  d-flex"
+          gap={160}
+          sx={{paddingX:{xl:"50px"},  }}
+        >
           {dataforstep.map((data, index) => (
             <ImageListItem
               key={index}
-              sx={{ width: { xl: "25%" }, height: { xl: "20%" } }}
+              sx={{
+                width: { xl: "25%" },
+                height: { xl: "20%" },
+                lineHeight: "1.3",
+              }}
             >
-              <img src={data.image} />
-              <Typography
+              <img
+      
+                style={{
+        
+                    width:"288px",
+                    height:"240px",
+                  flexGrow: "0",
+                }}
+                src={data.image}
+              />
+      
+              <Typography variant="h3"
+
                 sx={{
-                  marginTop: "32px",
-                  marginBottom: "16px",
-                  fontSize: " 1.3333333333em",
-                  lineHeight: "1.6em",
-                  fontWeight: "500",
+                   marginTop: "32px",
+                   marginBottom: "16px",
+                    fontSize: " 1.3333333333em",
+                   lineHeight: "1.6em",
+                  display:"block",
                   marginBlockStart: "1em",
-                  marginBlockEnd: "1em",
+                   marginBlockEnd: "1em",
                   marginInlineStart: "0px",
-                  marginInlineEnd: "0px",
+                   marginInlineEnd: "0px",
+                   textAlign: "left",
                 }}
               >
                 {data.titleimage}
@@ -67,16 +97,14 @@ const Guidemockup = () => {
               <Typography
                 variant="p"
                 sx={{
-                  marginTop: "32px",
-                  marginBottom: "16px",
-                  fontSize: " 1.0666666667em",
-                  lineHeight: "1.625em",
+                  fontSize: " 1em",
                   fontWeight: "400",
-                  marginBlockStart: "1em",
+               
                   marginBlockEnd: "1em",
                   marginInlineStart: "0px",
-                  marginInlineEnd: "0px",
-                  marginTop: "0",
+                  marginInlineEnd: "0px", 
+                  boxSizing: "borderBox",
+                  textAlign: "left",
                 }}
               >
                 {data.descriptionimage}
@@ -90,6 +118,7 @@ const Guidemockup = () => {
             Open Smartmockups and discover an ever-growing selection of device
             photos and 3D renders, in all operating systems.
           </p> */}
+      
       </Grid>
     </Grid>
   );

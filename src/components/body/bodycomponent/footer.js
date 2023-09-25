@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import React from "react";
 import logoimg from "../../../assest/logo/logo.png";
 const product = [
@@ -67,18 +67,33 @@ const help = [
 
 const BottomFooter = () => {
   return (
-    <Grid container xl={12} height={600}>
-      <Grid item className="col-xl-6 d-flex flex-column  ">
-        <div className="" style={{ position: " relative" }}>
+    <Grid container xl={12} sx={{ marginTop: { xl: "8%" } }}>
+      <Grid
+        item
+        className="col-xl-6 d-flex flex-column   position-relative "
+      >
+       <Box className="d-flex flex-column " style={{ position: " relative" }} > 
+       <img src={}/>
           <img
             src={logoimg}
             alt="Paris"
-            width="300"
-            height="100"
-            style={{ position: "absolute", top: "0px", left: "560px" }}
+            width="150px"
+            height="40px"
+            style={{ position: "absolute", top: "0px", left: "250px" }}
           />
-        </div>
-        {leftbottomtext.map((lefticondetail, id) => (
+          <Box className="bg-warning" sx={{marginTop:{xl:"5%"}}}>
+            vfj
+          </Box>
+          <Box className="bg-success">
+            vfj
+          </Box>
+          <Box className="bg-danger">
+            vfj
+          </Box>
+
+        </Box>
+
+       {/*   {leftbottomtext.map((lefticondetail, id) => (
           <div className=" mt-5">
             <smal className="justify-content-center d-flex ">
               {lefticondetail.icon}
@@ -91,7 +106,8 @@ const BottomFooter = () => {
             </small>
             <small className="justify-content-center d-flex"></small>
           </div>
-        ))}
+        ))} */}
+        
       </Grid>
       <Grid item className="col-xl-2 d-flex flex-column">
         {product.map((prdname, index) => (
