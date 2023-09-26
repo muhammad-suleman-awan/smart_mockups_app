@@ -36,10 +36,10 @@ const Smartmockup = () => {
       <Grid
         item
         className=" col-xl-8 d-flex justify-content-center flex-column "
-        sx={{maxWidth:{xl:"35%"}}}
+        sx={{maxWidth:{xl:"35%", lg:"35%"}}}
       >
         <Typography
-          className="col-xl-12 d-flex justify-content-center "
+          className="col-xl-12 col-lg-12  d-flex justify-content-center "
           sx={{
             textTransform: { xl: "uppercase" },
             marginBottom: { xl: "8px" },
@@ -54,7 +54,7 @@ const Smartmockup = () => {
           SMARTMOCKUPS LEARNING LIBRARY
         </Typography>
         <Typography
-          className="col-xl-12 d-flex"
+          className="col-xl-12 col-lg-12 d-flex"
           variant="h2"
           sx={{
             
@@ -73,6 +73,7 @@ const Smartmockup = () => {
         item
         className="d-flex "
           xl={8}
+          lg={8}
            >
         <ImageList
           className="  d-flex"
@@ -91,8 +92,8 @@ const Smartmockup = () => {
       
                 style={{
         
-                    width:"294.5px",
-                    height:"173.52px",
+                    // width:"294.5px",
+                    // height:"173.52px",
                   flexGrow: "0",
                 }}
                 src={data.image}

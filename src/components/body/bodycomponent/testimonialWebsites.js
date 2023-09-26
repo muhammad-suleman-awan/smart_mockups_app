@@ -19,31 +19,15 @@ const backstyle = {
 const Testimonial = () => {
   return (
     <div
-      className="d-flex flex-row col-xl-12 pt-xl-5 mt-xl-5 justify-content-center "
+      className="d-flex flex-row col-sm-12 pt-xl-5 mt-sm-5 justify-content-center "
       style={{ height: "17%" }}
     >
       <div
-        className="d-flex col-xl-8 p-0 m-0 h-100 position-relative"
+        className="d-flex col-xl-8 col-lg-8 p-0 m-0 h-100 position-relative"
         style={backstyle}
       >
-        {/* <div
-          className="d-flex flex-row col-xl-3    position-absolute bg-white "
-          style={{
-            translate: "middle",
-            top: "150px",
-            left: "218px",
-            height: "60%",
-          }}
-        >
-          <p className="col-xl-9">
-            "As designers, we can talk a lot about product design, user
-            experience etc. But if a client can't see themselves in any of that,
-            it doesn't exist. Smartmockups solves that problem for me. Every.
-            Single. Time."
-          </p>
-          
-        </div> */}
-        <Grid container xl={3.2}  sx={{position:"relative",bgcolor:"white", marginLeft:{xl:"115px"},height:{xl:"55%"} , translate:"middle",
+    
+        <Grid container xl={3.2} lg={3.2} sx={{position:"relative",bgcolor:"white", marginLeft:{xl:"115px"},height:{xl:"55%", lg:"55%"} , translate:"middle",
            top:{xl:"130px"},
           }}>
            <Grid item sx={{position:"absolute",

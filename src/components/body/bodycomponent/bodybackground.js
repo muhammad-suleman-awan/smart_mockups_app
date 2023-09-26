@@ -5,35 +5,29 @@ import { Box, Typography } from "@mui/material";
 import { red } from "@mui/material/colors";
 
 const Bodybackground = ({ data }) => {
+  const styles = {
+    paperContainer: {
+      height: 600,
+      backgroundImage: ` url(${images})`,
+      
+    },
+  };
+
   return (
-    <Box
-      className="row d-flex justify-content-center  col-xl-12 col-lg-10 col-sm-1"
-      sx={{
-        paddingTop: { xl: "3.3%" },
-        height: { xl: "15.2%" },
-      }}
+    <Box style={styles.paperContainer} sx={{ backgroundRepeat:"no-repeat", backgroundSize:{xl:1800, lg:1500, md:1200,sm:1000,xs:430},backgroundPosition:{xl:"center"}, 
+      backgroundAttachment:"absolute",   
+      // backgroundColor:{xl:"red", lg:"blue", md:"yellow",sm:"pink",xs:"orange"}
+    }}
+    className="col-xl-12 justify-content-senter"
+    
     >
-      {/* <Box className="col-xl-10 col-sm-4    "> */}
-      <Box
-        className=""
-        style={{
-          backgroundImage: `url("${images}")`,
-          backgroundRepeat: "round",
-        }}
-        sx={{
-          width: { xl: "81%" },
-          // left: { xl:"30%"},
-          position: "relative",
-          marginLeft:{xl:"20px"}
-        }}
-      >
-        <Box
+        {/* <Box
           className="text-white "
           sx={{
             position: "absolute",
-            width: { xl: "40%" },
-            top: { xl: "25%" },
-            left: { xl: "7%" },
+            width: { md: "50%", xs: "10%" },
+            top: { lg: "25%" },
+            left: { lg: "7%" },
           }}
         >
           <Typography variant="body2" sx={data.toprowStyle}>
@@ -41,15 +35,12 @@ const Bodybackground = ({ data }) => {
           </Typography>
 
           <Typography variant={data.variantValue} sx={data.toprowMiddle}>
-          {data.middleRow}
+            {data.middleRow}
           </Typography>
-          <Button variant="text" sx={data.toprowBottom}>👉 {data.endRowBtn}</Button>
-
-           
-        </Box>
-
-      </Box>
-      {/* </Box> */}
+          <Button variant="text" sx={data.toprowBottom}>
+            👉 {data.endRowBtn}
+          </Button>
+        </Box>     */}
     </Box>
   );
 };

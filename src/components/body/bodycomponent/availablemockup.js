@@ -46,10 +46,25 @@ const Availablemockup = () => {
   return (
     <Grid
       container
-      sx={{ marginTop: { xl: "150px" } }}
+      sx={{
+        marginTop: { md: "150px" },
+        overflow: "auto",
+        // backgroundColor: {
+        //   xl: "white",
+        //   lg: "blue",
+        //   md: "yellow",
+        //   sm: "pink",
+        //   xs: "orange",
+        // },
+      }}
       justifyContent={"center"}
     >
-      <Grid item xl={9} className=" justify-content-center d-flex flex-column">
+      <Grid
+        item
+        xl={9}
+        lg={9}
+        className=" justify-content-center d-flex flex-column"
+      >
         <Typography
           className="d-flex "
           justifyContent={"center"}
@@ -77,42 +92,27 @@ const Availablemockup = () => {
           library
         </Typography>
       </Grid>
-      <Grid item xl={8} className=" ">
-        <Box className="d-flex justify-content-center  ">
-          <ImageList
-            sx={{ xl: { width: "50%" } }}
-            className=" "
-            cols={4}
-            gap={12}
-          >
-            {imagesofavaiablemockup.map((item) => (
-              <ImageListItem
-                sx={{
-                  xl: { width: "280px" },
-                  xl: { height: "100%" },
-                  xl: { borderRadius: "5px" },
-                }}
-              >
-                <img srcSet={`${item.image}`} />
-              </ImageListItem>
-            ))}
-          </ImageList>
-        </Box>
+      <Grid item  xl={8} lg={12} className="">
+        {imagesofavaiablemockup.map((item) => (
+          <img
+            srcSet={`${item.image}`}
+            className="col-lg-3 p-3 col-md-6 col-12 "
+          />
+        ))}
       </Grid>
-      <Grid item xl={9} className="d-flex justify-content-center py-5 ">
+      <Grid item xl={9} lg={9} className="d-flex justify-content-center py-5 ">
         <Button
-        
-   variant="outlined"
-   sx={{  background: { xl: "#00bd28" },color: { xl: "#fff" },     fontSize:{xl:"1rem"},
-            padding:{xl:"12px 0px"},
-            lineHeight:{xl:"1.5"},
-            width:{xl:"24%"}
-            }}
+          variant="outlined"
+          sx={{
+            background: { xl: "#00bd28" },
+            color: { xl: "#fff" },
+            fontSize: { xl: "1rem" },
+            padding: { xl: "12px 0px" },
+            lineHeight: { xl: "1.5" },
+            width: { xl: "24%" },
+          }}
         >
-          <Typography        sc={{
-    
-        
-          }} > 👉 Create your first website mockup</Typography>
+          <Typography sc={{}}> 👉 Create your first website mockup</Typography>
         </Button>
 
         {/* <div classNameName="d-flex justify-content-center">

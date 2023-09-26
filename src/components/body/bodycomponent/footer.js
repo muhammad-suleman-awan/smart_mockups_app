@@ -87,9 +87,10 @@ const BottomFooter = () => {
     <Grid
       container
       xl={12}
-      sx={{ marginTop: { xl: "8%" }, paddingBottom: "150px" }}
+      lg={12}
+      sx={{ marginTop: { xl: "8%", lg:"8%" }, paddingBottom: "150px" }}
     >
-      <Grid item className="col-xl-6 d-flex flex-column   position-relative ">
+      <Grid item className="col-xl-6 col-lg-6 d-flex flex-column   position-relative ">
         <Box className="d-flex flex-column " style={{ position: " relative" }}>
           <img
             src={minilogo}
@@ -164,7 +165,7 @@ const BottomFooter = () => {
           </div>
         ))} */}
       </Grid>
-      <Grid item className="col-xl-2 d-flex flex-column" gap={2}>
+      <Grid item className="col-xl-2 d-flex col-lg-2 flex-column" gap={2}>
         {product.map((prdname, index) => (
           <div className="d-flex flex-column" key={index}>
             <h5>{prdname.productlabel1}</h5>
@@ -176,7 +177,7 @@ const BottomFooter = () => {
         ))}
       </Grid>
 
-      <Grid item className="col-xl-2 d-flex flex-column" gap={2}>
+      <Grid item className="col-xl-2 col-lg-2 d-flex flex-column" gap={2}>
         {otherdata.map((otheerData, index) => (
           <div className="d-flex flex-column">
             <h5>{otheerData.other}</h5>
@@ -187,7 +188,7 @@ const BottomFooter = () => {
           </div>
         ))}
       </Grid>
-      <Grid item className="d-flex flex-column col-xl-2" gap={2}>
+      <Grid item className="d-flex flex-column col-lg-2 col-xl-2" gap={2}>
         {help.map((helpData, index) => (
           <div>
             <h5>{helpData.title}</h5>

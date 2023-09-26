@@ -11,14 +11,23 @@ const Guidemockup = () => {
   return (
     <Grid
       container
-      xl={12}
+      lg={12}
+      sm={12}
       justifyContent={"center"}
       mt={5}
       clas
-      sx={{ marginTop: { xl: "115px" },   }}
+      sx={{ marginTop: { xl: "115px" },       
+       backgroundColor: {
+          xl: "white",
+          lg: "blue",
+          md: "yellow",
+          sm: "pink",
+          xs: "orange",
+        },   
+        }}
        
     >
-      <Grid item className=" col-xl-8    ">
+      <Grid item className=" col-xl-8   col-lg-8 ">
 
         <Typography
           className="col-xl-12 d-flex justify-content-center"
@@ -47,22 +56,20 @@ const Guidemockup = () => {
           Three easy steps to your first mockup
         </Typography>
       </Grid>
-      <Grid
+        <Grid
         item
         className="d-flex "
           xl={8.1}
+          lg={8}
+          sx={4}
            >
-        <ImageList
-          className="  d-flex"
-          gap={160}
-          sx={{paddingX:{xl:"50px"},  }}
-        >
+    
           {dataforstep.map((data, index) => (
             <ImageListItem
               key={index}
               sx={{
-                width: { xl: "25%" },
-                height: { xl: "20%" },
+                width: { xl: "25%", lg:"20%" },
+                height: { xl: "20%",lg:"20%" },
                 lineHeight: "1.3",
               }}
             >
@@ -70,9 +77,9 @@ const Guidemockup = () => {
       
                 style={{
         
-                    width:"288px",
-                    height:"240px",
-                  flexGrow: "0",
+                  //   width:"250px",
+                  //   height:"240px",
+                  // flexGrow: "0",
                 }}
                 src={data.image}
               />
@@ -111,15 +118,10 @@ const Guidemockup = () => {
               </Typography>
             </ImageListItem>
           ))}
-        </ImageList>
-
-        {/* <h4>1. Find your favorite website mockup</h4>
-          <p>
-            Open Smartmockups and discover an ever-growing selection of device
-            photos and 3D renders, in all operating systems.
-          </p> */}
+       
+ 
       
-      </Grid>
+      </Grid>  
     </Grid>
   );
 };

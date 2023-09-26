@@ -14,26 +14,26 @@ const Piclogo = () => {
         lg={12}
         md={12}
         sx={{
-          padding:"0px"
+          padding: "0px",
         }}
         bgcolor={"red"}
       >
         <Box
           component="img"
           sx={{
-            height: { xl: 40  },
+            height: { xl: 40 },
             width: { xl: 70 },
             maxHeight: { xl: 500, xs: 25, md: 50 },
             maxWidth: { xl: 500, xs: 75, md: 150 },
             paddingLeft: { xl: "1.5vw", lg: 2 },
             marginRight: { xl: 0 },
-            top: { xl: 2 },
-            left: { xl: 15 },
+            top: { xl: 2, md: "2px", sm: "10px", xs:"5px" },
+            left: { xl: 15, md: "15px", sm: "20px",xs:"10px" },
           }}
           src={minilogo}
           className="position-absolute"
         />
-       
+
         <Box
           component="img"
           sx={{
@@ -41,10 +41,11 @@ const Piclogo = () => {
             width: { xl: 220 },
             // maxHeight: { xl: 500, xs: 25, md: 50 },
             // maxWidth: { xl: 500, xs: 75, md: 150 },
-            paddingLeft: { xl: "1.5vw", lg: 3 },
+            paddingLeft: { xl: "1.5vw", lg: "3", md: "3px" },
             marginRight: { xl: 0 },
-            top: { xl: 10, lg: 15 },
-            left: { xl: 20 },
+            top: { xl: 10, md: 15, sm: "10px" },
+            left: { xl: 20, lg: "5%" , md: "20px", sm: "15px" , xs:"15%"},
+            display: { xs: "none", sm: "block" },
           }}
           src={logoimage}
           className="position-absolute"

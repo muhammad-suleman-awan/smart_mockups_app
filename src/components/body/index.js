@@ -22,29 +22,28 @@ const Bodyindex = () => {
     middleRow:
       "Create high-quality product images to promote your responsive web design across devices using Smartmockups website mockup generator. Choose a mockup, customize and download in seconds.",
     endRowBtn: "Start creating",
- 
 
     toprowStyle: {
-      fontSize: { xl: "3.33333em" },
-      lineHeight: { xl: "1.24em" },
-      fontWeight: { xl: "700" },
+      fontSize: { lg: "3.33333em" },
+      lineHeight: { lg: "1.24em" },
+      fontWeight: { lg: "700" },
     },
 
     toprowMiddle: {
-      fontSize: { xl: "1.2em" },
-      lineHeight: { xl: "1.66667em" },
-      paddingTop: { xl: "20px" },
+      fontSize: { lg: "1.2em" },
+      lineHeight: { lg: "1.66667em" },
+      paddingTop: { lg: "20px" },
       textAlign: "left",
     },
     toprowBottom: {
       marginTop: { xl: "30px" },
-      backgroundColor: { xl: "white" },
-      color: { xl: "black" },
-      fontSize: { xl: "0.9rem" },
-      lineHeight: { xl: "2" },
-      color:"#000"
-     },
-    variantValue:['body2']
+      backgroundColor: { lg: "white" },
+      color: { lg: "black" },
+      fontSize: { lg: "0.9rem" },
+      lineHeight: { lg: "2" },
+      color: "#000",
+    },
+    variantValue: ["body2"],
   };
 
   const backgroundBottom = {
@@ -52,32 +51,30 @@ const Bodyindex = () => {
     middleRow: "Create your first website mockup online with Smartmockups",
     endRowBtn: "Start creating",
 
-    toprowStyle:{
- 
-      paddingTop:{xl:"45px"},
-      opacity:{xl:".6"},
-      textTransform:"uppercase",
-      marginBottom:{xl:"0px"},
-      textAlign:"left",
-      fontWeight:"400",
-      boxSizing: "borderBox"
+    toprowStyle: {
+      paddingTop: { xl: "45px" },
+      opacity: { xl: ".6" },
+      textTransform: "uppercase",
+      marginBottom: { xl: "0px" },
+      textAlign: "left",
+      fontWeight: "400",
+      boxSizing: "borderBox",
     },
-    toprowMiddle:{ 
-      marginBottom:{xl:"24px"},
-      fontSize: "2.2em" ,
-      lineHeight:{xl:"1.3333333em"},
-      fontWight:"1000em",
-      boxSizing:{xl:"borderBox"},
-      display:"block",
-      marginBlockStart:"0.22em",
-      marginBlockEnd:"0.67em",
-      marginInlineStart:"0px",
-      textAlign:"left",
-     
-      fontWeight:"bold"
-      
+    toprowMiddle: {
+      marginBottom: { xl: "24px" },
+      fontSize: "2.2em",
+      lineHeight: { xl: "1.3333333em" },
+      fontWight: "1000em",
+      boxSizing: { xl: "borderBox" },
+      display: "block",
+      marginBlockStart: "0.22em",
+      marginBlockEnd: "0.67em",
+      marginInlineStart: "0px",
+      textAlign: "left",
+
+      fontWeight: "bold",
     },
-    variantValue:['h1'],
+    variantValue: ["h1"],
     toprowBottom: {
       marginTop: { xl: "10px" },
       backgroundColor: { xl: "white" },
@@ -85,33 +82,33 @@ const Bodyindex = () => {
       fontSize: { xl: "1rem" },
       lineHeight: { xl: "1.5" },
       width: { xl: "30%" },
-      textAlign:"left", 
-      color:"#000"
+      textAlign: "left",
+      color: "#000",
     },
   };
- 
 
   return (
     <>
       <Grid container>
         <Grid
           item
-          xl={12}
-          sx={{ justifyContent: "flex-center" }}
-          // bgcolor={"red"}
-        >
-          <Bodybackground data={backgroundTop} />
+          sm={12}
+          sx={{ justifyContent: "flex-center"
+          
+           }}
+    
+      >
+          <Bodybackground data={backgroundTop}  />
           <Btnbody2 />
-            
-           <Bottombtn/>
+
+          {/* <Bottombtn /> */}
           <Mockupusing />
           <Availablemockup />
-          <Guidemockup />
-          <Testimonial />
+        <Guidemockup />  
+            <Testimonial /> 
           <Bodybackground data={backgroundBottom} />
-          <Smartmockup />
-          <BottomFooter />
-         
+          {/* <Smartmockup />
+          <BottomFooter />   */}
         </Grid>
       </Grid>
     </>

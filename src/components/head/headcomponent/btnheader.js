@@ -35,22 +35,28 @@ const ButtonHeader = () => {
         container
         sx={{
           paddingTop: { xl: 1.5, lg: 2 },
-          paddingLeft: { xl: 0 },
-          justifyContent: { lg: "center" },
-          
+          paddingLeft: { xl:6 },
+          // justifyContent: { lg: "center" },
         }}
       >
         <Grid
           item
           xs={12}
-          sx={{ display: "flex", gap: 4.5,top: { xl: "5"}  ,  justifyContent: { xl:"left", lg: "center" }, paddingLeft: {xl:6} }}
-          
+          sx={{
+            display: "flex",
+            gap: 4.5,
+            top: { xl: "5" },
+       
+
+            justifyContent: {  xl:"left" ,  lg: "center", sm: "center",xs:"left" },
+            paddingLeft: { xl: "6" },
+          }}
         >
           {heade_btn.map((a, index) => (
             <div key={index} className=" ">
               <label
-                className="  px-xl-0 top-5 "
-                style={{ borderRadius: "0px" }}
+                className="  px-xl-0 top-5  d-flex flexwrap-nowrap"
+                style={{ borderRadius: "0px",  }}
               >
                 {a.btn_label}
               </label>

@@ -8,10 +8,20 @@ const Mockupusing = () => {
   return (
     <Grid
       container
-      className="flex-row"
-      sx={{ marginTop: { xl: "140px" }, justifyContent: { xl: "center" },  }}
+      className="d-flex flex-row "
+      gap={4}
+      sx={{ marginTop: { lg: "140px" }, justifyContent: { xl: "center" , lg:"center"},
+      
+      // backgroundColor: {
+      //     xl: "white",
+      //     lg: "blue",
+      //     md: "yellow",
+      //     sm: "pink",
+      //     xs: "orange",
+      //   },
+          }}
     >
-      <Grid item className="  " xl={4}>
+      <Grid item className="order-sm-1 order-lg-0 order-1" xl={4} lg={4}>
         <Typography
           sx={{
             fontWeight: { xl: "400" },
@@ -56,10 +66,10 @@ const Mockupusing = () => {
           </p>
         </Typography>
       </Grid>
-    <Grid item  className="" xl={4}>
+    <Grid item  className="order-sm-0 order-lg-1 order-0" xl={4} lg={4}>
       <ImageListItem
           className=""
-          sx={{ width: { xl: "auto" }}}
+          sx={{ width: { lg: "auto" }}}
         >
           <img src={collectionpic} className=""></img>
         </ImageListItem>

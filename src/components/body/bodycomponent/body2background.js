@@ -13,26 +13,36 @@ const Btnbody2 = () => {
     <Grid
       container
       justifyContent={"center"}
-      gap={2}
-      className="  col-xl-6"
-      xl={12}
-      sx={{ marginTop: { xl: "130px" } }}
+      lg={12}
+      xs={12}
+      sx={{
+        marginTop: { xs: "130px" },
+        overflow: "auto",
+
+        // backgroundColor: {
+        //   xl: "white",
+        //   lg: "blue",
+        //   md: "yellow",
+        //   sm: "pink",
+        //   xs: "orange",
+        // },
+      }}
     >
-      <Grid item className="" xl={2}>
-        <ImageListItem
-          className=""
+      <Grid item className="" xl={2} lg={2} sm={6}  xs={3}>
+        <img
           sx={{ width: { xl: "32%" }, marginLeft: { xl: "29%" } }}
-        >
-          <img src={HighQMimage} className=""></img>
-        </ImageListItem>
+          src={HighQMimage}
+          className=""
+        ></img>
+
         <Typography
           variant="h3"
           sx={{
-            paddingTop: { xl: "7%" },
-            paddingLeft: { xl: "0px" },
-            fontSize: { xl: "1.2em" },
-            lineHeight: { xl: "1.6666666667em" },
-            textAlign:"center"
+            paddingTop: { xs: "7%" },
+            paddingLeft: { xs: "0px" },
+            fontSize: { xs: "1.2em" },
+            lineHeight: { xs: "1.6666666667em" },
+            textAlign: "center",
           }}
         >
           High-quality mockup images
@@ -40,30 +50,33 @@ const Btnbody2 = () => {
         <Typography
           variant="body2"
           sx={{
-            paddingTop: { xl: "4%" },
-            paddingLeft: { xl: "0px" },
-            fontWeight: { xl: "400" },
+            paddingTop: { xs: "4%" },
+            paddingLeft: { xs: "0px" },
+            fontWeight: { xs: "400" },
           }}
         >
-         Choose from professional lifestyle images or isolated 3D renders to create engaging product presentations.
+          Choose from professional lifestyle images or isolated 3D renders to
+          create engaging product presentations.
         </Typography>
       </Grid>
-      <Grid item className="" xl={2}>
-        <ImageListItem
-          className=""
-          sx={{ width: { xl: "32%" }, marginLeft: { xl: "29%" } }}
-        >
-          <img src={UpVideog} className=""></img>
-        </ImageListItem>
+      <Grid item className="" xl={2} lg={2} sm={6} xs={3}>
+        <img
+          src={UpVideog}
+          sx={{
+            width: { xl: "32%", xs: "12%" },
+            maxWidth: "35%",
+            minWidth: "5%",
+            marginLeft: { xl: "29%" },
+          }}
+        ></img>
         <Typography
           variant="h3"
           sx={{
-            paddingTop: { xl: "7%" },
-            paddingLeft: { xl: "0px" },
-            fontSize: { xl: "1.2em" },
-            lineHeight: { xl: "1.6666666667em" },
-            textAlign:"center"
-
+            paddingTop: { xs: "7%" },
+            paddingLeft: { xs: "0px" },
+            fontSize: { xs: "1.2em" },
+            lineHeight: { xs: "1.6666666667em" },
+            textAlign: "center",
           }}
         >
           Upload video or GIF
@@ -71,32 +84,31 @@ const Btnbody2 = () => {
         <Typography
           variant="body2"
           sx={{
-            paddingTop: { xl: "4%" },
-            paddingLeft: { xl: "0px" },
-            fontWeight: { xl: "400" },
-                        textAlign:"center"
-
+            paddingTop: { xs: "4%" },
+            paddingLeft: { xs: "0px" },
+            fontWeight: { xs: "400" },
+            textAlign: "center",
           }}
         >
-          With Smartmockups you can upload GIFs and videos to bring your website and app to life. No flat, boring presentations for your work!
+          With Smartmockups you can upload GIFs and videos to bring your website
+          and app to life. No flat, boring presentations for your work!
         </Typography>
       </Grid>
-      <Grid item className="" xl={2}>
-        <ImageListItem
+      <Grid item className="" xl={2} lg={2} sm={6} xs={3}>
+        <img
+          src={SshotUrl}
           className=""
           sx={{ width: { xl: "32%" }, marginLeft: { xl: "29%" } }}
-        >
-          <img src={SshotUrl} className=""></img>
-        </ImageListItem>
+        ></img>
+
         <Typography
           variant="h3"
           sx={{
-            paddingTop: { xl: "7%" },
-            paddingLeft: { xl: "0px" },
-            fontSize: { xl: "1.2em" },
-            lineHeight: { xl: "1.6666666667em" },
-            textAlign:"center"
-
+            paddingTop: { xs: "7%" },
+            paddingLeft: { xs: "0px" },
+            fontSize: { xs: "1.2em" },
+            lineHeight: { xs: "1.6666666667em" },
+            textAlign: "center",
           }}
         >
           Screenshots from a URL
@@ -104,30 +116,30 @@ const Btnbody2 = () => {
         <Typography
           variant="body2"
           sx={{
-            paddingTop: { xl: "4%" },
-            paddingLeft: { xl: "0px" },
-            fontWeight: { xl: "400" },
+            paddingTop: { xs: "4%" },
+            paddingLeft: { xs: "0px" },
+            fontWeight: { xs: "400" },
           }}
         >
-          Show off any page of a website by simply typing the URL and adding a browser. Save yourself time and let Smartmockups do the work.
+          Show off any page of a website by simply typing the URL and adding a
+          browser. Save yourself time and let Smartmockups do the work.
         </Typography>
       </Grid>
-      <Grid item className="" xl={2}>
-        <ImageListItem
+      <Grid item className="" xl={2} lg={2} sm={6} xs={3}>
+        <img
+          src={SingleMultidevice}
           className=""
           sx={{ width: { xl: "32%" }, marginLeft: { xl: "29%" } }}
-        >
-          <img src={SingleMultidevice} className=""></img>
-        </ImageListItem>
+        ></img>
+
         <Typography
           variant="h3"
           sx={{
-            paddingTop: { xl: "7%" },
-            paddingLeft: { xl: "0px" },
-            fontSize: { xl: "1.2em" },
-            lineHeight: { xl: "1.6666666667em" },
-            textAlign:"center"
-
+            paddingTop: { xs: "7%" },
+            paddingLeft: { xs: "0px" },
+            fontSize: { xs: "1.2em" },
+            lineHeight: { xs: "1.6666666667em" },
+            textAlign: "center",
           }}
         >
           Single and multiple devices
@@ -135,16 +147,16 @@ const Btnbody2 = () => {
         <Typography
           variant="body2"
           sx={{
-            paddingTop: { xl: "4%" },
-            paddingLeft: { xl: "0px" },
-            fontWeight: { xl: "400" },
-          }} 
+            paddingTop: { xs: "4%" },
+            paddingLeft: { xs: "0px" },
+            fontWeight: { xs: "400" },
+          }}
         >
-          Explore our library of mockups ranging from laptops and desktops to smartphones, in all operating systems. Plus, we've got responsive mockup sets and screens, too.
+          Explore our library of mockups ranging from laptops and desktops to
+          smartphones, in all operating systems. Plus, we've got responsive
+          mockup sets and screens, too.
         </Typography>
       </Grid>
-      
-      
     </Grid>
   );
 };
