@@ -14,6 +14,7 @@ import Guidemockup from "./bodycomponent/stepbystepguide";
 import Testimonial from "./bodycomponent/testimonialWebsites";
 import Smartmockup from "./bodycomponent/smartmockup";
 import BottomFooter from "./bodycomponent/footer";
+import Bottombtn from "./bodycomponent/stickybtn";
 
 const Bodyindex = () => {
   const backgroundTop = {
@@ -101,13 +102,16 @@ const Bodyindex = () => {
         >
           <Bodybackground data={backgroundTop} />
           <Btnbody2 />
+            
+           <Bottombtn/>
           <Mockupusing />
           <Availablemockup />
           <Guidemockup />
           <Testimonial />
           <Bodybackground data={backgroundBottom} />
           <Smartmockup />
-          <BottomFooter />  
+          <BottomFooter />
+         
         </Grid>
       </Grid>
     </>
