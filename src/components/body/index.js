@@ -107,14 +107,14 @@ const Bodyindex = () => {
           <Mockupusing />
           <Availablemockup />
           <Guidemockup />
-          {/* <Testimonial /> */}
-          {/* <div style={
+           <Testimonial /> 
+            <div style={
             {
               position:'relative'
             }
           }>
           <Bodybackground data={backgroundBottom }  />
-          </div> */}
+          </div>    
           {/* <Smartmockup />
           <BottomFooter />   */}
         </Grid>

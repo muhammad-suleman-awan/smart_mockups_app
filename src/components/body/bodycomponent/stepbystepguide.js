@@ -15,22 +15,11 @@ const Guidemockup = () => {
       sm={12}
       justifyContent={"center"}
       mt={5}
-      className=""
-      sx={{
-        marginTop: { xl: "115px" },
-        //  backgroundColor: {
-        //     xl: "white",
-        //     lg: "blue",
-        //     md: "yellow",
-        //     sm: "pink",
-        //     xs: "orange",
-        //   },
-      }}
-      style={{ marginBottom: "15%" }}
+      sx={{}}
     >
       <Grid item className=" col-xl-8   col-lg-8 ">
         <Typography
-          className="col-xl-12 d-flex justify-content-center"
+          className="col-xl-12 pt-5 d-flex justify-content-center"
           sx={{
             textTransform: { xl: "uppercase" },
             marginBottom: { xl: "8px" },
@@ -56,72 +45,89 @@ const Guidemockup = () => {
           Three easy steps to your first mockup
         </Typography>
       </Grid>
+
       <Grid
         item
         className="d-flex justify-items-center justify-content-center px-5  "
-        gap={{ xl: 20, lg: 5, md: 12, sm: 8 }}
+        gap={{ xl: 20, lg: 5, md: 12, sm: 8, xs: 35 }}
         xl={8}
         lg={8}
         md={12}
         sm={12}
         xs={12}
         flexDirection={{ xs: "column", sm: "row" }}
+        p
       >
-        {dataforstep.map((data, index) => (
-          <ImageListItem
-            key={index}
-            sx={{
-              maxWidth: "100%",
-              // width: { xl: "25%", lg: "20%" },
-              // height: { xl: "20%", lg: "20%" },
-              lineHeight: "1.3",
-            }}
-          >
-            <img
-              style={
-                {
-                  //   width:"250px",
-                  //   height:"240px",
-                  // flexGrow: "0",
-                }
-              }
-              src={data.image}
-            />
-
-            <Typography
-              variant="h3"
-              sx={{
-                marginTop: "32px",
-                marginBottom: "16px",
-                fontSize: " 1.3333333333em",
-                lineHeight: "1.6em",
-                display: "block",
-                marginBlockStart: "1em",
-                marginBlockEnd: "1em",
-                marginInlineStart: "0px",
-                marginInlineEnd: "0px",
-                textAlign: "left",
-              }}
+        <Grid
+          containerm
+          gap={5}
+          // spacing={2}
+          className="d-flex justify-content-around"
+          sx={{
+            flexDirection:{sm:"row", xs:"column"}
+          }}
+        >
+          {dataforstep.map((data, index) => (
+            <Grid
+              item
+              xl={3}
+              lg={3}
+              md={3}
+              sm={3}
+              xs={12}
+             
             >
-              {data.titleimage}
-            </Typography>
-            <Typography
-              variant="p"
-              sx={{
-                fontSize: " 1em",
-                fontWeight: "400",
+              <ImageListItem
+                key={index}
+                sx={{
+                  maxWidth: "100%",
+                }}
+              >
+                <img
+                  style={
+                    {
+                      //   width:"250px",
+                      //   height:"240px",
+                      // flexGrow: "0",
+                    }
+                  }
+                  src={data.image}
+                />
+              </ImageListItem>
+              <Typography
+                variant="h3"
+                sx={{
+                  marginTop: "32px",
+                  marginBottom: "16px",
+                  fontSize: " 1.3333333333em",
+                  lineHeight: "1.6em",
+                  marginBlockStart: "1em",
+                  marginBlockEnd: "1em",
+                  marginInlineStart: "0px",
+                  marginInlineEnd: "0px",
+                  textAlign: "left",
+                }}
+              >
+                {data.titleimage}
+              </Typography>
+              <Typography
+                variant="p"
+                sx={{
+                  fontSize: " 1em",
+                  fontWeight: "400",
 
-                marginBlockEnd: "1em",
-                marginInlineStart: "0px",
-                marginInlineEnd: "0px",
-                boxSizing: "borderBox",
-                textAlign: "left",
-              }}
-            >
-              {data.descriptionimage}
-            </Typography>
-          </ImageListItem>
-        ))}
+                  marginBlockEnd: "1em",
+                  marginInlineStart: "0px",
+                  marginInlineEnd: "0px",
+                  boxSizing: "borderBox",
+                  textAlign: "left",
+                }}
+              >
+                {data.descriptionimage}
+              </Typography>
+            </Grid>
+          ))}
+        </Grid>
       </Grid>
     </Grid>
   );
