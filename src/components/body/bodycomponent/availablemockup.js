@@ -15,6 +15,7 @@ import img5 from "../../../assest/images/5.jpg";
 import img6 from "../../../assest/images/6.jpg";
 import img7 from "../../../assest/images/7.jpg";
 import img8 from "../../../assest/images/8.jpg";
+import { WrapText } from "@mui/icons-material";
 
 const imagesofavaiablemockup = [
   {
@@ -50,22 +51,22 @@ const Availablemockup = () => {
         marginTop: { md: "150px" },
         overflow: "auto",
         // backgroundColor: {
-        //   xl: "white",
+        //   xl: "oragnge",
         //   lg: "blue",
         //   md: "yellow",
         //   sm: "pink",
         //   xs: "orange",
         // },
+        paddingX:{lg:"24px"}
       }}
       justifyContent={"center"}
     >
-      <Grid
-        item
-        xl={9}
-        lg={9}
+      <Grid  item xl={9}   lg={9} xs={12}
         className=" justify-content-center d-flex flex-column"
       >
-        <Typography
+
+      {/* <h1>H1</h1> */}
+          <Typography
           className="d-flex "
           justifyContent={"center"}
           sx={{
@@ -90,17 +91,29 @@ const Availablemockup = () => {
         >
           Discover inspiration in our ever-growing<br></br> website mockup
           library
-        </Typography>
+        </Typography> 
       </Grid>
-      <Grid item  xl={8} lg={12} className="">
-        {imagesofavaiablemockup.map((item) => (
+
+      <Grid item  xl={8} lg={12}  xs={12} className="overflow-auto  "
+       sx={{
+        display:{xs:"flex", },
+        flexDirection:{xs:"row",sm:"row"},
+        flexWrap:{xs:"nowrap", sm:"Wrap"}
+       }}
+      >
+         {imagesofavaiablemockup.map((item) => (
           <img
             srcSet={`${item.image}`}
-            className="col-lg-3 p-3 col-md-6 col-12 "
+            className="col-lg-3 p-3 col-md-6 col-4 "
           />
-        ))}
+        ))} 
+
+        {/* <h1>H2</h1> */}
       </Grid>
-      <Grid item xl={9} lg={9} className="d-flex justify-content-center py-5 ">
+
+
+
+      <Grid item xl={9} lg={9}  xs={12} className="d-flex justify-content-center py-5  ">
         <Button
           variant="outlined"
           sx={{
@@ -114,8 +127,10 @@ const Availablemockup = () => {
         >
           <Typography sc={{}}> 👉 Create your first website mockup</Typography>
         </Button>
+        
+ 
 
-        {/* <div classNameName="d-flex justify-content-center">
+      {/* <div classNameName="d-flex justify-content-center">
           <div classNameName="mx-5 my-4 bd-highlight text-danger fs-5 d-flex justify-content-center">
             <Button
               variant="outlined"
@@ -125,7 +140,7 @@ const Availablemockup = () => {
             >
             </Button>
           </div>
-        </div> */}
+        </div>  */}
       </Grid>
     </Grid>
   );

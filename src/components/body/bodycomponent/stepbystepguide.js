@@ -15,20 +15,20 @@ const Guidemockup = () => {
       sm={12}
       justifyContent={"center"}
       mt={5}
-      clas
-      sx={{ marginTop: { xl: "115px" },       
-       backgroundColor: {
-          xl: "white",
-          lg: "blue",
-          md: "yellow",
-          sm: "pink",
-          xs: "orange",
-        },   
-        }}
-       
+      className=""
+      sx={{
+        marginTop: { xl: "115px" },
+        //  backgroundColor: {
+        //     xl: "white",
+        //     lg: "blue",
+        //     md: "yellow",
+        //     sm: "pink",
+        //     xs: "orange",
+        //   },
+      }}
+      style={{ marginBottom: "15%" }}
     >
       <Grid item className=" col-xl-8   col-lg-8 ">
-
         <Typography
           className="col-xl-12 d-flex justify-content-center"
           sx={{
@@ -56,72 +56,73 @@ const Guidemockup = () => {
           Three easy steps to your first mockup
         </Typography>
       </Grid>
-        <Grid
+      <Grid
         item
-        className="d-flex "
-          xl={8.1}
-          lg={8}
-          sx={4}
-           >
-    
-          {dataforstep.map((data, index) => (
-            <ImageListItem
-              key={index}
-              sx={{
-                width: { xl: "25%", lg:"20%" },
-                height: { xl: "20%",lg:"20%" },
-                lineHeight: "1.3",
-              }}
-            >
-              <img
-      
-                style={{
-        
+        className="d-flex justify-items-center justify-content-center px-5  "
+        gap={{ xl: 20, lg: 5, md: 12, sm: 8 }}
+        xl={8}
+        lg={8}
+        md={12}
+        sm={12}
+        xs={12}
+        flexDirection={{ xs: "column", sm: "row" }}
+      >
+        {dataforstep.map((data, index) => (
+          <ImageListItem
+            key={index}
+            sx={{
+              maxWidth: "100%",
+              // width: { xl: "25%", lg: "20%" },
+              // height: { xl: "20%", lg: "20%" },
+              lineHeight: "1.3",
+            }}
+          >
+            <img
+              style={
+                {
                   //   width:"250px",
                   //   height:"240px",
                   // flexGrow: "0",
-                }}
-                src={data.image}
-              />
-      
-              <Typography variant="h3"
+                }
+              }
+              src={data.image}
+            />
 
-                sx={{
-                   marginTop: "32px",
-                   marginBottom: "16px",
-                    fontSize: " 1.3333333333em",
-                   lineHeight: "1.6em",
-                  display:"block",
-                  marginBlockStart: "1em",
-                   marginBlockEnd: "1em",
-                  marginInlineStart: "0px",
-                   marginInlineEnd: "0px",
-                   textAlign: "left",
-                }}
-              >
-                {data.titleimage}
-              </Typography>
-              <Typography
-                variant="p"
-                sx={{
-                  fontSize: " 1em",
-                  fontWeight: "400",
-               
-                  marginBlockEnd: "1em",
-                  marginInlineStart: "0px",
-                  marginInlineEnd: "0px", 
-                  boxSizing: "borderBox",
-                  textAlign: "left",
-                }}
-              >
-                {data.descriptionimage}
-              </Typography>
-            </ImageListItem>
-          ))}
-       
- 
-      
-      </Grid>  
+            <Typography
+              variant="h3"
+              sx={{
+                marginTop: "32px",
+                marginBottom: "16px",
+                fontSize: " 1.3333333333em",
+                lineHeight: "1.6em",
+                display: "block",
+                marginBlockStart: "1em",
+                marginBlockEnd: "1em",
+                marginInlineStart: "0px",
+                marginInlineEnd: "0px",
+                textAlign: "left",
+              }}
+            >
+              {data.titleimage}
+            </Typography>
+            <Typography
+              variant="p"
+              sx={{
+                fontSize: " 1em",
+                fontWeight: "400",
+
+                marginBlockEnd: "1em",
+                marginInlineStart: "0px",
+                marginInlineEnd: "0px",
+                boxSizing: "borderBox",
+                textAlign: "left",
+              }}
+            >
+              {data.descriptionimage}
+            </Typography>
+          </ImageListItem>
+        ))}
+      </Grid>
     </Grid>
   );
 };

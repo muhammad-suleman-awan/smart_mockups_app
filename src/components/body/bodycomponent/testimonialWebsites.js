@@ -20,7 +20,7 @@ const Testimonial = () => {
   return (
     <div
       className="d-flex flex-row col-sm-12 pt-xl-5 mt-sm-5 justify-content-center "
-      style={{ height: "17%" }}
+      style={{ height: "17%", marginTop:"60%" }}
     >
       <div
         className="d-flex col-xl-8 col-lg-8 p-0 m-0 h-100 position-relative"

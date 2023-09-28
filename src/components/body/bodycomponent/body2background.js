@@ -10,72 +10,128 @@ import { Padding } from "@mui/icons-material";
 
 const Btnbody2 = () => {
   return (
-    // <div className="overflow-x-auto " >
-
-    <div
-      item
-      className="  d-flex flex-row overflow-auto justify-content-around col-12"
-      style={{ marginTop: "140px", maxWidth:"100vw" }}
+    <Grid
+      container
+      className="  d-flex flex-row overflow-auto  "
+      style={{ marginTop: "140px", maxWidth: "100vw" ,minWidth:"100%"}}
+      gap={{ xl: 12, lg: 8, md: 12, sm: 10 }}
+      xl={12}
+      lg={12}
+      xs={12}
+      sx={{
+        justifyContent: { sm: "center" },
+        flexWrap: { xl: "nowrap", xs: "nowrap", sm: "wrap" },
+        paddingX: { sm: "12px", },
+        backgroundColor: {
+          // xl: "red",
+          // lg: "blue",
+          // md: "yellow",
+          // sm: "pink",
+          // xs: "darkgray",
+        },
+      }}
     >
-      <div className="d-flex  border-2 flex-column justify-content-center align-items-center col-md-2 col-xs-2">
-        <img src={HighQMimage}></img>
+      <Grid
+        item
+        xl={1.7}
+        lg={2.4}
+        md={2}
+        sm={5}
+        xs={12}
+        className="border-2   justify-content-center align-items-center "
+        sx={{         paddingX: { sm: "0px",xs:"30px", maxWidth:"88vw" }
+ }}
+        
+      >
+        <img src={HighQMimage} className="  d-flex m-auto  "></img>
 
         <Typography
           variant="h3"
           sx={{
-            fontSize: { xs: "1.2em" },
-            lineHeight: { xs: "1.6666666667em" },
+            fontSize:"1.2em" ,
+            lineHeight: "1.6666666667em" ,
             textAlign: "center",
-            whiteSpace: { lg: "nowrap" },
+            whiteSpace:"wrap" ,
+
+            marginTop: "32px",
+            marginBottom: "8px",
           }}
-          className="w-100 py-4"
+          className="w-100 "
         >
           High-quality mockup images
         </Typography>
         <Typography
           variant="body2"
           sx={{
-            paddingTop: { xs: "4%" },
-            paddingLeft: { xs: "0px" },
-            fontWeight: { xs: "400" },
-            textAlign: { sm: "center" },
+            paddingTop: "4%",
+            fontWeight: "400",
+            textAlign: "center",
           }}
         >
           Choose from professional lifestyle images or isolated 3D renders to
           create engaging product presentations.
         </Typography>
-      </div>
+      </Grid>
 
-      <div className=" d-flex flex-column   justify-content-center align-items-center col-md-2 col-sm-6">
-        <img src={UpVideog}></img>
+      <Grid
+        item
+        xl={1.7}
+        lg={2.4}
+        md={2}
+        sm={5}
+        xs={12}      
+      
+
+          sx={{ paddingX: { sm: "0px",xs:"30px", maxWidth:"48vw" }}}
+
+
+        className="    justify-content-center align-items-center "
+      >
+        <img
+          src={UpVideog}
+          className="d-flex m-auto justify-content-center"
+        ></img>
         <Typography
           variant="h3"
           sx={{
-            paddingLeft: { xs: "0px" },
             fontSize: { xs: "1.2em" },
             lineHeight: { xs: "1.6666666667em" },
             textAlign: "center",
+            whiteSpace:"wrap" ,
+          
+            marginTop:"32px",
+            marginBottom:"8px"
           }}
-          className="w-100 py-4"
+          className="w-100 "
         >
           Upload video or GIF
         </Typography>
         <Typography
           variant="body2"
           sx={{
-            paddingTop: { lg: "4%", md: "24%", sm: "5%" },
-            paddingLeft: { xs: "0px" },
-            fontWeight: { xs: "400" },
+            paddingTop: "4%",
+            fontWeight: "400",
             textAlign: "center",
           }}
         >
           With Smartmockups you can upload GIFs and videos to bring your website
           and app to life. No flat, boring presentations for your work!
         </Typography>
-      </div>
+      </Grid>
 
-      <div className="d-flex  flex-column  justify-content-center align-items-center col-md-2 col-sm-6">
-        <img src={SshotUrl} className=""></img>
+      <Grid
+        item
+ 
+        xl={1.7}
+        lg={2.4}
+        md={2}
+        sm={5}
+        xs={12}
+        sx={{ paddingX: { sm: "0px",xs:"30px", maxWidth:"48vw" }}}
+
+        className="  justify-content-center align-items-center  "
+      >
+        <img src={SshotUrl} className="d-flex m-auto"></img>
 
         <Typography
           variant="h3"
@@ -83,7 +139,10 @@ const Btnbody2 = () => {
             fontSize: { xs: "1.2em" },
             lineHeight: { xs: "1.6666666667em" },
             textAlign: "center",
-            paddingTop: { lg: "8%", md: "15%" },
+            whiteSpace:"wrap" ,
+
+            marginTop: "32px",
+            marginBottom: "8px",
           }}
           className="w-100"
         >
@@ -92,9 +151,8 @@ const Btnbody2 = () => {
         <Typography
           variant="body2"
           sx={{
-            paddingTop: { lg: "18%", sm: "11%", md: "20%" },
-            paddingLeft: { xs: "0px" },
-            fontWeight: { xs: "400" },
+            paddingTop: "4%",
+            fontWeight: "400",
             textAlign: "center",
           }}
           className="w-100 "
@@ -102,19 +160,31 @@ const Btnbody2 = () => {
           Show off any page of a website by simply typing the URL and adding a
           browser. Save yourself time and let Smartmockups do the work.
         </Typography>
-      </div>
+      </Grid>
 
-      <div className="d-flex  flex-column align-items-center col-md-2 col-sm-6">
+      <Grid
+        item
+        xl={1.7}
+        lg={2.4}
+        md={2}
+        sm={5}
+        xs={12}
+        sx={{ paddingX: { sm: "0px",xs:"30px", maxWidth:"48vw" }}}
+
+        className=" align-items-center  "
+      >
         {" "}
-        <img src={SingleMultidevice} className=""></img>
+        <img src={SingleMultidevice} className=" d-flex m-auto"></img>
         <Typography
           variant="h3"
           sx={{
-            paddingLeft: { lg: "0px" },
             fontSize: { xs: "1.2em" },
             lineHeight: { xs: "1.6666666667em" },
             textAlign: "center",
-            paddingTop: { xl: "8%", md: "10%" },
+            whiteSpace:"wrap" ,
+
+            marginTop: "32px",
+            marginBottom: "8px",
           }}
           className="w-100  "
         >
@@ -123,9 +193,12 @@ const Btnbody2 = () => {
         <Typography
           variant="body2"
           sx={{
-            paddingTop: { lg: "15%", sm: "8%", md: "20%", sm: "10%" },
-            paddingLeft: { xs: "0px" },
-            fontWeight: { xs: "400" },
+            // paddingTop: { lg: "15%", sm: "8%", md: "20%", sm: "10%" },
+            // paddingLeft: { xs: "0px" },
+            // fontWeight: { xs: "400" },
+            // textAlign: "center",
+            paddingTop: "4%",
+            fontWeight: "400",
             textAlign: "center",
           }}
         >
@@ -133,9 +206,8 @@ const Btnbody2 = () => {
           smartphones, in all operating systems. Plus, we've got responsive
           mockup sets and screens, too.
         </Typography>
-      </div>
-    </div>
-    // </div>
+      </Grid>
+    </Grid>
   );
 };
 
