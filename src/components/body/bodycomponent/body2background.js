@@ -17,7 +17,7 @@ const Btnbody2 = () => {
       className="  d-flex flex-row overflow-auto justify-content-around col-12"
       style={{ marginTop: "140px", maxWidth:"100vw" }}
     >
-      <div className="d-flex  border-2 flex-column justify-content-center align-items-center col-md-6 col-xs-2">
+      <div className="d-flex  border-2 flex-column justify-content-center align-items-center col-md-2 col-xs-2">
         <img src={HighQMimage}></img>
 
         <Typography
@@ -46,7 +46,7 @@ const Btnbody2 = () => {
         </Typography>
       </div>
 
-      <div className=" d-flex flex-column   justify-content-center align-items-center col-md-6 col-sm-6">
+      <div className=" d-flex flex-column   justify-content-center align-items-center col-md-2 col-sm-6">
         <img src={UpVideog}></img>
         <Typography
           variant="h3"
@@ -74,7 +74,7 @@ const Btnbody2 = () => {
         </Typography>
       </div>
 
-      <div className="d-flex  flex-column  justify-content-center align-items-center col-md-6 col-sm-6">
+      <div className="d-flex  flex-column  justify-content-center align-items-center col-md-2 col-sm-6">
         <img src={SshotUrl} className=""></img>
 
         <Typography
@@ -104,7 +104,7 @@ const Btnbody2 = () => {
         </Typography>
       </div>
 
-      <div className="d-flex  flex-column align-items-center col-md-6 col-sm-6">
+      <div className="d-flex  flex-column align-items-center col-md-2 col-sm-6">
         {" "}
         <img src={SingleMultidevice} className=""></img>
         <Typography
