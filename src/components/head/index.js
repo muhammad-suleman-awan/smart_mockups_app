@@ -20,7 +20,7 @@ const Index = () => {
         }}
         padding={{ xl: 1.5, lg: 2 }}
       >
-        <Grid item xl={1.5} lg={6} md={6} sm={6} xs={6} order={{ xs: 1, lg: 1 }}>
+        <Grid item xl={1.5} lg={6} md={6} sm={4} xs={2} order={{ xs: 1, lg: 1 }}>
           <Piclogo> </Piclogo>
         </Grid>
 
@@ -40,9 +40,9 @@ const Index = () => {
           item
           xl={2.5}
           md={6}
-          sm={6}
+          sm={8}
           lg={6}
-          xs={6}
+          xs={10}
           // bgcolor={"green"}
           order={{ xs: 2, xl: 3 }}
         >

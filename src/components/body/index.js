@@ -24,26 +24,35 @@ const Bodyindex = () => {
     endRowBtn: "Start creating",
 
     toprowStyle: {
-      fontSize: { lg: "3.33333em" },
-      lineHeight: { lg: "1.24em" },
-      fontWeight: { lg: "700" },
-    },
+      fontSize: { lg: "3.33333em",sm:"24px", xs:"1.3em" },
+      lineHeight: { xs: "1.24em" },
+      fontWeight: { lg: "700", md:"900",xs:"700" }, 
+      justifyContent:{sm:"center", xs:"center"},
+      textAlign:"center",
+      whiteSpace:"nowrap"    },
 
     toprowMiddle: {
-      fontSize: { lg: "1.2em" },
-      lineHeight: { lg: "1.66667em" },
+      fontSize: { sm: "1.2em",xs:"8px" },
+      lineHeight: { xs: "1.66667em" },
       paddingTop: { lg: "20px" },
       textAlign: "left",
+
     },
     toprowBottom: {
+       
       marginTop: { xl: "30px" },
-      backgroundColor: { lg: "white" },
-      color: { lg: "black" },
-      fontSize: { lg: "0.9rem" },
-      lineHeight: { lg: "2" },
+      backgroundColor: { xs: "white" },
+      color: { xs: "black" },
+      fontSize: { xs: "0.9rem" },
+      lineHeight: { xs: "2" },
       color: "#000",
+      whiteSpace:"nowrap" ,
+      width:{xl:"150px"}
     },
     variantValue: ["body2"],
+    justifyContent:"center",
+    
+
   };
 
   const backgroundBottom = {
@@ -52,7 +61,7 @@ const Bodyindex = () => {
     endRowBtn: "Start creating",
 
     toprowStyle: {
-      paddingTop: { xl: "45px" },
+      paddingTop: { xl: "0px" },
       opacity: { xl: ".6" },
       textTransform: "uppercase",
       marginBottom: { xl: "0px" },
@@ -89,24 +98,23 @@ const Bodyindex = () => {
 
   return (
     <>
-      <Grid container>
-        <Grid
-          item
-          sm={12}
-          sx={{ justifyContent: "flex-center"
-          
-           }}
-    
-      >
+      <Grid container >
+        <Grid item sm={12} sx={{ justifyContent: "flex-center" }} className=" pt-5  " style={{maxWidth:"100vw"}}  >
           <Bodybackground data={backgroundTop}  />
           <Btnbody2 />
 
           {/* <Bottombtn /> */}
           <Mockupusing />
           <Availablemockup />
-        <Guidemockup />  
-            <Testimonial /> 
-          <Bodybackground data={backgroundBottom} />
+          <Guidemockup />
+          <Testimonial />
+          <div style={
+            {
+              position:'relative'
+            }
+          }>
+          <Bodybackground data={backgroundBottom }  />
+          </div>
           {/* <Smartmockup />
           <BottomFooter />   */}
         </Grid>

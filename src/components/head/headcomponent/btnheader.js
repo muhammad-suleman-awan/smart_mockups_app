@@ -55,8 +55,8 @@ const ButtonHeader = () => {
           {heade_btn.map((a, index) => (
             <div key={index} className=" ">
               <label
-                className="  px-xl-0 top-5  d-flex flexwrap-nowrap"
-                style={{ borderRadius: "0px",  }}
+                className="  px-xl-0 top-5  d-flex flexwrap-nowrap "
+                style={{ borderRadius: "0px", whiteSpace:"nowrap" }}
               >
                 {a.btn_label}
               </label>
