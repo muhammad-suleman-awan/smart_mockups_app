@@ -1,9 +1,9 @@
-import { Grid, ImageList, ImageListItem, Typography } from "@mui/material";
-import React from "react"; 
-import image1 from "../../../assest/images/Blog1.jpg"
-import image2 from "../../../assest/images/Blog2.jpg"
-import image3 from "../../../assest/images/Blog3.jpg"
-import image4 from "../../../assest/images/Blog4.jpg"
+import { Box, Grid, ImageList, ImageListItem, Typography } from "@mui/material";
+import React from "react";
+import image1 from "../../../assest/images/Blog1.jpg";
+import image2 from "../../../assest/images/Blog2.jpg";
+import image3 from "../../../assest/images/Blog3.jpg";
+import image4 from "../../../assest/images/Blog4.jpg";
 
 const datablogpage = [
   {
@@ -11,18 +11,18 @@ const datablogpage = [
     title: "Photos vs. isolated mockups: What's the difference?",
   },
   {
-    image:  image2 ,
+    image: image2,
     title: "How to get the perfect background for a mockup",
   },
   {
-    image:image3 ,
+    image: image3,
     title: "Upgrade your portfolio to the next level with website mockups",
   },
   {
-    image:  image4,
+    image: image4,
     title:
       "Bring your product mockups to life with video & GIF upload and export",
-  }
+  },
 ];
 
 const Smartmockup = () => {
@@ -31,15 +31,18 @@ const Smartmockup = () => {
       container
       lg={12}
       justifyContent={"center"}
-      sx={{ marginTop: "140px" }}
+      sx={{ marginTop: "140px", marginBottom: "5%" }}
+      // className="border border-info     "
+      gap={5}
     >
       <Grid
         item
-        className=" col-xl-8 d-flex justify-content-center flex-column "
-        sx={{maxWidth:{xl:"35%", lg:"35%"}}}
+        className=" col-xl-12 d-flex justify-content-center flex-column
+        
+         "
       >
         <Typography
-          className="col-xl-12 col-lg-12  d-flex justify-content-center "
+          className="col-xl-12 col-lg-12  d-flex justify-content-center py-5 "
           sx={{
             textTransform: { xl: "uppercase" },
             marginBottom: { xl: "8px" },
@@ -57,80 +60,63 @@ const Smartmockup = () => {
           className="col-xl-12 col-lg-12 d-flex"
           variant="h2"
           sx={{
-            
-            marginBottom: { xl: "80px" },
-            fontSize: { xl: "2.4em" },
-            lineHeight: { xl: "1.333333333em" },
-            fontWeight: { xl: "700" },
-            justifyContent: 'center',
-            textAlign:"center"
+            marginBottom:"80px" ,
+            fontSize:"2.4em" ,
+            lineHeight:"1.333333333em",
+            fontWeight:"700" ,
+            justifyContent: "center",
+            textAlign: "center",
           }}
         >
-        Get tips from our blog, be inspired, and learn more 
+          Get tips from our blog, be inspired, and learn more
         </Typography>
       </Grid>
-      <Grid
-        item
-        className="d-flex "
-          xl={8}
-          lg={8}
-           >
-        <ImageList
-          className="  d-flex"
-          gap={10} 
+
+      {datablogpage.map((data, index) => (
+        <Grid
+          item
+          // className="border border-danger   "
+          xl={2}
+          lg={2.5}
+          md={2.3}
+          sm={5}
+          xs={6}
+          sx={{ mx: { xl: 1, lg: 1, md: 1, sm: 1 }, mt: { md: 0, sm: 1 } }}
         >
-          {datablogpage.map((data, index) => (
-            <ImageListItem
-              key={index}
-              sx={{
-                width: { xl: "40%" },
-                height: { xl: "20%" },
-                lineHeight: "1.3",
-              }}
-            >
-              <img
-      
-                style={{
-        
-                    // width:"294.5px",
-                    // height:"173.52px",
-                  flexGrow: "0",
-                }}
-                src={data.image}
-              />
-      
-              <Typography variant="h3"
+          <img
+            style={{ maxWidth: "194px", minWidth: "100%" }}
+            // sx={{
+            //   height: 233,
+            //   width: 350,
+            //   maxHeight: { xs: 233, md: 167 },
+            //   maxWidth: { xs: 350, md: 250 },
+            // }}
+            src={data.image}
+          />
+          <Typography
+            // className="border border-primary"
 
-                sx={{
-                   marginTop: "32px",
-                   marginBottom: "16px",
-                    fontSize: " 1.2em",
-                   lineHeight: "1.66667em",
-                  display:"block",
-                  marginBlockStart: "1em",
-                   marginBlockEnd: "1em",
-                  marginInlineStart: "0px",
-                   marginInlineEnd: "0px",
-                   textAlign: "left",
-                   marginBlockStart: "1em",
-                   marginBlockEnd: "1em",
-                   display: "block",
-                }}
-              >
-                {data.title}
-              </Typography>
-               
-            </ImageListItem>
-          ))}
-        </ImageList>
-
-        {/* <h4>1. Find your favorite website mockup</h4>
-          <p>
-            Open Smartmockups and discover an ever-growing selection of device
-            photos and 3D renders, in all operating systems.
-          </p> */}
-      
-      </Grid>
+            variant="h3"
+            sx={{
+              marginTop: "32px",
+              marginBottom: "16px",
+              fontSize: " 1.2em",
+              lineHeight: "1.66667em",
+              display: "block",
+              marginBlockStart: "1em",
+              marginBlockEnd: "1em",
+              marginInlineStart: "0px",
+              marginInlineEnd: "0px",
+              textAlign: "left",
+              marginBlockStart: "1em",
+              marginBlockEnd: "1em",
+              display: "block",
+            }}
+          >
+            {data.title}
+          </Typography>
+        </Grid>
+      ))}
     </Grid>
   );
 };

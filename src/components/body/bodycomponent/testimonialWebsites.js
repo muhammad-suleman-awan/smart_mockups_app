@@ -1,6 +1,6 @@
 import React from "react";
 import textbackimg from "../../../assest/images/Testimonial_Websites.png";
-import n from '../../../assest/logo/n.png'
+import n from "../../../assest/logo/n.png";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -10,47 +10,76 @@ import Typography from "@mui/material/Typography";
 import { Grid } from "@mui/material";
 
 const backstyle = {
-  backgroundImage: `url(${textbackimg})`,
-  backgroundRepeat: "no-repeat",
-  backgroundPosition: "center",
-  backgroundSize: "100%",
+  paperContainer: {
+    backgroundImage: ` url(${textbackimg})`,
+  },
 };
 
 const Testimonial = () => {
   return (
-    <div
-      className="d-flex flex-row col-sm-12 pt-xl-5 mt-sm-5 justify-content-center "
-      style={{ height: "17%", marginTop:"60%" }}
+    <Box
+      style={backstyle.paperContainer}
+      sx={{
+        backgroundRepeat: "no-repeat",
+        backgroundSize: { xl: 1600, lg: 1440, md: 1050, sm: 950, xs: 350 },
+        backgroundPosition: { xl: "center" },
+        backgroundAttachment: "absolute",
+        height: { xl: 700, lg: 600, md: 500, sm: 400, xs: 455 },
+        marginBottom: "100px",
+      }}
     >
-      <div
-        className="d-flex col-xl-8 col-lg-8 p-0 m-0 h-100 position-relative"
-        style={backstyle}
-      >
+        <Grid
+     
+              container
+        xl={2.2}
+        lg={2.2}
+        md={4} 
+        sm={6}
+        xs={10}
+
+        sx={{
+          position: "relative",
+          bgcolor: "white",
+          marginLeft: { xl: "115px" },
+          height: { xl: "50%", lg: "65%",md:"75%",sm:"60%",xs:"60%" },
+          translate: "middle",
+          top: { xl: "25%", lg:"15%", md:"10%",sm:"65%", xs:"30%" },
+          left: {xl:"13.5%",lg:"15%", md:"7%", sm:"20%", xs:"10%"},
     
-        <Grid container xl={3.2} lg={3.2} sx={{position:"relative",bgcolor:"white", marginLeft:{xl:"115px"},height:{xl:"55%", lg:"55%"} , translate:"middle",
-           top:{xl:"130px"},
-          }}>
-           <Grid item sx={{position:"absolute",
-          }}>
-          <Typography variant="p" sx={{fontSize:"1.33333333em",lineHeight:"1.3em", display:"block"}}>
-          "As designers, we can talk a lot about product design, user
+
+        }}
+      >
+        <Grid item
+         sx={{ position: "absolute" }}
+         >
+          <Typography
+            variant="p"
+            sx={{
+              fontSize: "1.33333333em",
+              lineHeight: "1.3em",
+              display: "block",
+              py:{md:"10px",sm:"0px"},
+              px:{md:"5px"}
+            }}
+          >
+            "As designers, we can talk a lot about product design, user
             experience etc. But if a client can't see themselves in any of that,
             it doesn't exist. Smartmockups solves that problem for me. Every.
             Single. Time."
           </Typography>
-          <div className="d-flex flex-row mt-5">
-              <div className="">
-
-            <img src={n} className="mx-2" style={{width:"50px"}}></img></div>
+          <div className="d-flex flex-row mt-sm-3  ">
+            <div className="">
+              <img src={n} className="mx-2" style={{ width: "50px" }}
+              ></img>
+            </div>
             <div className="d-flex flex-column m-0 p-0">
-            <p className="m-0">Nick D.</p>
-            <small className="">Smartmockups user</small></div>
+              <p className="m-0">Nick D.</p>
+              <small className="">Smartmockups user</small>
+            </div>
           </div>
-          
-        </Grid>  
         </Grid>
-      </div>
-    </div>
+      </Grid> 
+    </Box>
   );
 };
 

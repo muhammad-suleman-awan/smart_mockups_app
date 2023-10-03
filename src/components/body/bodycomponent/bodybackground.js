@@ -6,10 +6,7 @@ import { red } from "@mui/material/colors";
 
 const Bodybackground = ({ data }) => {
   const styles = {
-    paperContainer: {
-        // maxHeight:700,
-          // height: 200,
-        // minHeight: 200, 
+    paperContainer: { 
       backgroundImage: ` url(${images})`,
     },
   };

@@ -98,7 +98,7 @@ const Bodyindex = () => {
 
   return (
     <>
-      <Grid container >
+      <Grid container  >
         <Grid item sm={12} sx={{ justifyContent: "flex-center" }} className=" pt-5  " style={{maxWidth:"100vw"}}  >
           <Bodybackground data={backgroundTop}  />
           <Btnbody2 />
@@ -115,8 +115,8 @@ const Bodyindex = () => {
           }>
           <Bodybackground data={backgroundBottom }  />
           </div>    
-          {/* <Smartmockup />
-          <BottomFooter />   */}
+          <Smartmockup />
+          <BottomFooter />   
         </Grid>
       </Grid>
     </>

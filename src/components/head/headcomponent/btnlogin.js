@@ -17,11 +17,10 @@ const LoginButton = () => {
           >
             <Button
               variant="outlined"
-              classNameName=" d-flex border-0 "
-              className=" "
+              className=" d-flex border-1"
               
               sx={{
-                width: { xl: "20%", lg: "12%", md: "17%", sm: "17%", xs:"30%"},
+                width: { xl: "20%", lg: "13%", md: "17%", sm: "17%", xs:"30%"},
                 height: { xl: "30px", lg: "30px", md: "30px", sm: "3%",xs:'24px' },
                 top: { xl: "10px", lg: "10px", md: "10px", sm: "10px",xs:"9px" },
                 left: { xl: "110px", lg: "52%", md: "33%", sm: "48%",xs:'19%'  },
@@ -35,9 +34,9 @@ const LoginButton = () => {
               classNameName="text-white border-0  border-light  rounded p-0"
               sx={{
                 width: { xl: "37%", lg: "30%", md: "42%", sm: "33%", xs:"46%" },
-                height: { xl: "30px", sm: "14%", xs:"50%" },
+                height: { xl: "30px",lg:"30px", sm: "14%", xs:"50%" },
                 top: { xl: "-7px", md: "-7px", sm: "-7px", xs:"-7px" },
-                left: { xl: "120px", lg: "380px", md: "35%",sm:"50%", xs:"20%"  },
+                left: { xl: "120px", lg: "55%", md: "35%",sm:"50%", xs:"20%"  },
               }}
               style={{ backgroundColor: "rgb(255, 102, 0" }}
             >
