@@ -15,6 +15,7 @@ const Guidemockup = () => {
       sm={12}
       justifyContent={"center"}
       mt={5}
+      mb={5}
       sx={{}}
     >
       <Grid item className=" col-xl-8   col-lg-8 ">

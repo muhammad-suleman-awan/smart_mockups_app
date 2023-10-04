@@ -24,35 +24,32 @@ const Bodyindex = () => {
     endRowBtn: "Start creating",
 
     toprowStyle: {
-      fontSize: { lg: "3.33333em",sm:"24px", xs:"1.3em" },
+      fontSize: { lg: "3.33333em", sm: "24px", xs: "1.3em" },
       lineHeight: { xs: "1.24em" },
-      fontWeight: { lg: "700", md:"900",xs:"700" }, 
-      justifyContent:{sm:"center", xs:"center"},
-      textAlign:"center",
-      whiteSpace:"nowrap"    },
+      fontWeight: { xs: "700" },
+      justifyContent: { xs: "center" },
+      textAlign: "center",
+      whiteSpace: "nowrap",
+    },
 
     toprowMiddle: {
-      fontSize: { sm: "1.2em",xs:"8px" },
-      lineHeight: { xs: "1.66667em" },
+      fontSize: { sm: "1em", xs: ".3333em" },
+
       paddingTop: { lg: "20px" },
       textAlign: "left",
-
     },
     toprowBottom: {
-       
       marginTop: { xl: "30px" },
       backgroundColor: { xs: "white" },
       color: { xs: "black" },
       fontSize: { xs: "0.9rem" },
       lineHeight: { xs: "2" },
       color: "#000",
-      whiteSpace:"nowrap" ,
-      width:{xl:"150px"}
+      whiteSpace: "nowrap",
+      width: { xs: "150px" },
     },
     variantValue: ["body2"],
-    justifyContent:"center",
-    
-
+    justifyContent: "center",
   };
 
   const backgroundBottom = {
@@ -61,65 +58,58 @@ const Bodyindex = () => {
     endRowBtn: "Start creating",
 
     toprowStyle: {
-      paddingTop: { xl: "0px" },
-      opacity: { xl: ".6" },
-      textTransform: "uppercase",
-      marginBottom: { xl: "0px" },
-      textAlign: "left",
-      fontWeight: "400",
-      boxSizing: "borderBox",
+      fontSize: { lg: "3.33333em", sm: "24px", xs: "1.3em" },
+      lineHeight: { xs: "1.24em" },
+      fontWeight: { xs: "700" },
+      justifyContent: { xs: "center" },
+      textAlign: "center",
+      whiteSpace: "nowrap",
     },
     toprowMiddle: {
-      marginBottom: { xl: "24px" },
-      fontSize: "2.2em",
-      lineHeight: { xl: "1.3333333em" },
-      fontWight: "1000em",
-      boxSizing: { xl: "borderBox" },
-      display: "block",
-      marginBlockStart: "0.22em",
-      marginBlockEnd: "0.67em",
-      marginInlineStart: "0px",
-      textAlign: "left",
+   
+    },
 
-      fontWeight: "bold",
-    },
-    variantValue: ["h1"],
     toprowBottom: {
-      marginTop: { xl: "10px" },
-      backgroundColor: { xl: "white" },
-      color: { xl: "black" },
-      fontSize: { xl: "1rem" },
-      lineHeight: { xl: "1.5" },
-      width: { xl: "30%" },
-      textAlign: "left",
+      marginTop: "30px" ,
+       backgroundColor:  "white" ,
+      color: "black" ,
+      fontSize: "0.9rem" ,
+      lineHeight:  "2" ,
       color: "#000",
+      whiteSpace: "nowrap",
+      width: "150px",
     },
+    // variantValue: ["body2"],
+    justifyContent: "center",
   };
 
   return (
-    <>
-      <Grid container  >
-        <Grid item sm={12} sx={{ justifyContent: "flex-center" }} className=" pt-5  " style={{maxWidth:"100vw"}}  >
-          <Bodybackground data={backgroundTop}  />
+    <div>
+      <Grid container>
+        <Grid
+          item
+          sm={12}
+          sx={{ justifyContent: "flex-center" }}
+          className=" pt-5  "
+          style={{ maxWidth: "100vw" }}
+        >
+          <Bodybackground data={backgroundTop} />
           <Btnbody2 />
 
           {/* <Bottombtn /> */}
           <Mockupusing />
           <Availablemockup />
           <Guidemockup />
-           <Testimonial /> 
-            <div style={
-            {
-              position:'relative'
-            }
-          }>
-          <Bodybackground data={backgroundBottom }  />
-          </div>    
+          <Testimonial />
+          
+         
+            <Bodybackground data={backgroundBottom}  />
+           
           <Smartmockup />
-          <BottomFooter />   
+          <BottomFooter />
         </Grid>
       </Grid>
-    </>
+    </div>
   );
 };
 export default Bodyindex;

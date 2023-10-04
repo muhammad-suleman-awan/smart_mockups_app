@@ -8,7 +8,7 @@ const Mockupusing = () => {
   return (
     <Grid
       container
-      className="d-flex flex-row "
+      className="d-flex flex-row px-5"
       gap={4}
       sx={{ marginTop: { lg: "140px" }, justifyContent: { xl: "center" , lg:"center"},
       
@@ -34,8 +34,12 @@ const Mockupusing = () => {
         >
           USING MOCKUPS
         </Typography>
-        <Typography level="h2">
-          <h2
+        <Typography level="h2" sx={{
+           marginBottom: "24px",
+              fontSize: "1.2em",
+              fontWeight: "700",              
+        }}>
+          {/* <h2
             style={{
               marginBottom: "24px",
               fontSize: "2.4em",
@@ -43,9 +47,9 @@ const Mockupusing = () => {
               fontWeight: "700",
             }}
           >
-            {" "}
+            {" "} */}
             Bring your design to life and impress your client
-          </h2>{" "}
+          {/* </h2>{" "} */}
         </Typography>
         <Typography sx={{width:{xl:"550px"} }}>
           <p
@@ -54,6 +58,7 @@ const Mockupusing = () => {
               lineHeight: "1.5",
               fontWeight: "400",
               fontSize:"1.0666666667em", 
+              textAlign:"justify"
             }}
           >
             Ready to present your fresh website design to the client? Forget

@@ -17,7 +17,7 @@ const backstyle = {
 
 const Testimonial = () => {
   return (
-    <Box
+    <Box className=" "
       style={backstyle.paperContainer}
       sx={{
         backgroundRepeat: "no-repeat",
@@ -59,7 +59,8 @@ const Testimonial = () => {
               lineHeight: "1.3em",
               display: "block",
               py:{md:"10px",sm:"0px"},
-              px:{md:"5px"}
+              px:{md:"5px"},
+              textAlign:"justify"
             }}
           >
             "As designers, we can talk a lot about product design, user
@@ -67,7 +68,7 @@ const Testimonial = () => {
             it doesn't exist. Smartmockups solves that problem for me. Every.
             Single. Time."
           </Typography>
-          <div className="d-flex flex-row mt-sm-3  ">
+          <div className="d-flex flex-row mt-2">
             <div className="">
               <img src={n} className="mx-2" style={{ width: "50px" }}
               ></img>

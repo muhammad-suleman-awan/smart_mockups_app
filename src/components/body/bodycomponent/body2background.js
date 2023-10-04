@@ -12,16 +12,16 @@ const Btnbody2 = () => {
   return (
     <Grid
       container
-      className="  d-flex flex-row overflow-auto  "
-      style={{ marginTop: "140px", maxWidth: "100vw" ,minWidth:"100%"}}
-      gap={{ xl: 12, lg: 8, md: 12, sm: 10 }}
+      className="pt-5 d-flex flex-row overflow-auto mb-5 "
+      style={{ maxWidth: "100vw" ,minWidth:"100%"}}
+      gap={{ xl: 12, lg: 8, md: 12, sm: 5, xs:0 }}
       xl={12}
       lg={12}
       xs={12}
       sx={{
         justifyContent: { sm: "center" },
         flexWrap: { xl: "nowrap", xs: "nowrap", sm: "wrap" },
-        paddingX: { sm: "12px", },
+        // paddingX: { sm: "12px", },
         backgroundColor: {
           // xl: "red",
           // lg: "blue",
@@ -38,12 +38,12 @@ const Btnbody2 = () => {
         md={2}
         sm={5}
         xs={12}
-        className="border-2   justify-content-center align-items-center "
-        sx={{         paddingX: { sm: "0px",xs:"30px", maxWidth:"88vw" }
+        className=" justify-content-center align-items-center "
+        sx={{         paddingLeft: { sm: "0px",xs:"15px",  }
  }}
         
       >
-        <img src={HighQMimage} className="  d-flex m-auto  "></img>
+        <img src={HighQMimage} className="  d-flex m-auto"></img>
 
         <Typography
           variant="h3"
@@ -55,8 +55,8 @@ const Btnbody2 = () => {
 
             marginTop: "32px",
             marginBottom: "8px",
-          }}
-          className="w-100 "
+           
+          }} 
         >
           High-quality mockup images
         </Typography>
@@ -66,6 +66,7 @@ const Btnbody2 = () => {
             paddingTop: "4%",
             fontWeight: "400",
             textAlign: "center",
+            width:{  xl:"267" , lg:"286px",md:"168px",sm:"318px",xs:"170px"}
           }}
         >
           Choose from professional lifestyle images or isolated 3D renders to
@@ -82,10 +83,11 @@ const Btnbody2 = () => {
         xs={12}      
       
 
-          sx={{ paddingX: { sm: "0px",xs:"30px", maxWidth:"48vw" }}}
-
+        sx={{         paddingLeft: { sm: "0px",xs:"15px",  }
+ }}
 
         className="    justify-content-center align-items-center "
+        
       >
         <img
           src={UpVideog}
@@ -100,7 +102,8 @@ const Btnbody2 = () => {
             whiteSpace:"wrap" ,
           
             marginTop:"32px",
-            marginBottom:"8px"
+            marginBottom:"8px",
+ 
           }}
           className="w-100 "
         >
@@ -112,6 +115,8 @@ const Btnbody2 = () => {
             paddingTop: "4%",
             fontWeight: "400",
             textAlign: "center",
+            width:{  xl:"267" , lg:"286px",md:"168px",sm:"318px",xs:"170px"}
+
           }}
         >
           With Smartmockups you can upload GIFs and videos to bring your website
@@ -127,8 +132,8 @@ const Btnbody2 = () => {
         md={2}
         sm={5}
         xs={12}
-        sx={{ paddingX: { sm: "0px",xs:"30px", maxWidth:"48vw" }}}
-
+        sx={{         paddingLeft: { sm: "0px",xs:"15px",  }
+ }}
         className="  justify-content-center align-items-center  "
       >
         <img src={SshotUrl} className="d-flex m-auto"></img>
@@ -150,12 +155,14 @@ const Btnbody2 = () => {
         </Typography>
         <Typography
           variant="body2"
+          className="pb-2"
           sx={{
             paddingTop: "4%",
             fontWeight: "400",
             textAlign: "center",
+            width:{  xl:"267" , lg:"286px",md:"168px",sm:"318px",xs:"170px"}
+
           }}
-          className="w-100 "
         >
           Show off any page of a website by simply typing the URL and adding a
           browser. Save yourself time and let Smartmockups do the work.
@@ -169,8 +176,8 @@ const Btnbody2 = () => {
         md={2}
         sm={5}
         xs={12}
-        sx={{ paddingX: { sm: "0px",xs:"30px", maxWidth:"48vw" }}}
-
+        sx={{         paddingLeft: { sm: "0px",xs:"15px",  }
+ }}
         className=" align-items-center  "
       >
         {" "}
@@ -200,6 +207,9 @@ const Btnbody2 = () => {
             paddingTop: "4%",
             fontWeight: "400",
             textAlign: "center",
+            boxSizing:"border-box",
+            width:{  xl:"267" , lg:"286px",md:"168px",sm:"318px",xs:"170px"}
+
           }}
         >
           Explore our library of mockups ranging from laptops and desktops to

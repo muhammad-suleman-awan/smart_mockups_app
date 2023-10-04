@@ -18,6 +18,10 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import bottomimage from "../../../assest/logo/bottom.jpg";
 import fb from "../../../assest/logo/facbiik icons.jpg";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const product = [
   {
@@ -88,32 +92,35 @@ const BottomFooter = () => {
     <Grid
       container
       xl={12}
-    className="mb-5"
+      className="mb-5 d-flex justify-content-center"
       lg={12}
-      sx={{ marginTop: { xl: "8%", lg: "8%" }, 
-      
-      paddingLeft:{lg:"0%",sm:"15%", xs:"5%"}
-         }}
-   
+      px={2}
+      sx={{
+        marginTop: { xl: "8%", lg: "8%" },
+        gap: { md: 0, sm: 1, xs: 2 },
+        paddingLeft: { lg: "0%" },
+        
+      }}
     >
       <Grid
         item
         className=" d-flex flex-column       
   position-relative "
         sx={{
-          order: { xs: 1, lg: 0 }, 
-
+          order: { xs: 1, md: 0 },
         }}
         xl={6}
         lg={6}
-        md={12}
+        md={6}
         sm={12}
         xs={12}
       >
-        <Box className="d-flex flex-column  " style={{ position: " relative" }}
-          sx={{marginTop:{lg:"0px", sm:"10%"}}}
+        <Box
+          className="d-flex flex-column  "
+          style={{ position: " relative" }}
+          sx={{ marginTop: { lg: "0px", sm: "10%" } }}
         >
-        {/* <ImageListItem>
+          {/* <ImageListItem>
           <img
             src={minilogo}
             width="2%" 
@@ -129,29 +136,33 @@ const BottomFooter = () => {
             // style={{ position: "absolute", top: "10px", left: "230px" }}
           />
           </ImageListItem> */}
-                    <FormControl
+          <FormControl
             size="small"
             fulWidth
             sx={{
-              width: { xl: "55%", lg: "62%", md:"60%", sm:"60%", xs:"60%" },
-              marginTop: { xl: "5%", lg: "8%", md:"8%", sm:"10%", xs:"30%" },
-              paddingLeft: { xl: "23%", lg: "30%", md:"20%", sm:"20%" },
+              width: { xl: "55%", lg: "62%", md: "60%", sm: "60%", xs: "60%" },
+              marginTop: { xl: "5%", lg: "8%", md: "8%", sm: "10%", xs: "30%" },
+              paddingLeft: { xl: "23%", lg: "30%", md: "20%", sm: "20%" },
               marginBottom: { xl: "10px", lg: "10px" },
             }}
           >
-            <InputLabel sx={{ paddingLeft: { xl: "60%", lg: "60%", md:"60%", sm:"70%", xs:"20%" } }}>
-              English
-            </InputLabel>
-            <Select className="rounded-pill">
-              <MenuItem value={10}>English</MenuItem>
+             
+            <Select className="rounded-pill d-flex justify-content-center" defaultValue={10}>
+              <MenuItem value={10}  >English</MenuItem>
               <MenuItem value={20}>Twenty</MenuItem>
               <MenuItem value={30}>Thirty</MenuItem>
             </Select>
             <Box
               className="d-flex"
               sx={{
-                marginTop: { xl: "-10%", lg: " -13%", md:"-8%", sm:"-12%",xs:"-20%" },
-                marginLeft: {sm:"110%", xs:"110%"},
+                marginTop: {
+                  xl: "-10%",
+                  lg: " -13%",
+                  md: "-8%",
+                  sm: "-12%",
+                  xs: "-20%",
+                },
+                marginLeft: { sm: "110%", xs: "110%" },
               }}
             >
               <FacebookIcon />
@@ -162,17 +173,17 @@ const BottomFooter = () => {
 
           <Typography
             variant="body2"
-            className="  d-flex text-center"
+            className="  d-flex text-center justify-center"
             sx={{
-              marginLeft: { xl: "20%", md:"20%", },
+              marginLeft: { xl: "20%", md: "20%" },
               marginRight: { xl: "25%" },
               fontSize: "0.867rem",
               color: "rgb(167,167,167",
               lineHeight: "1.3",
               fontWeight: "500",
               textAlign: "center",
-              width: { xl: "60%", md: "60%", sm:"90%" },
-              paddingTop: { lg: "5%",md:"5%", sm:"5%",xs:"10%" },
+              width: { xl: "60%", md: "60%", sm: "90%" },
+              paddingTop: { lg: "5%", md: "5%", sm: "10%", xs: "10%" },
             }}
           >
             © Smartmockups s.r.o. - All rights reserved. All product names,
@@ -180,69 +191,93 @@ const BottomFooter = () => {
           </Typography>
           <img
             src={bottomimage}
+            className="d-flex"
             style={{
               width: "40%",
               height: "18%",
-              marginLeft: "22%",
+              marginLeft: "30%",
               marginTop: "1%",
             }}
           ></img>
         </Box>
-
-        {/*   {leftbottomtext.map((lefticondetail, id) => (
-          <div className=" mt-5">
-            <smal className="justify-content-center d-flex ">
-              {lefticondetail.icon}
-            </smal>
-            <icon className="justify-content-center d-flex">
-              {lefticondetail.msg}
-            </icon>
-            <small className="justify-content-center d-flex">
-              {lefticondetail.piclog}
-            </small>
-            <small className="justify-content-center d-flex"></small>
-          </div>
-        ))} */}
       </Grid>
       <Grid
-       xl={2}
-       lg={2}
-       md={4}
-       sm={4}
-       xs={4}
-       className="  d-flex flex-column "
+        xl={2}
+        lg={2}
+        md={2}
+        sm={3}
+        xs={12}
+        className="  d-flex flex-column   "
         gap={6}
       >
+        <Accordion sx={{ display: { md: "none" } }}>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+          >
+            <Typography>PRODUCT</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            {product.map((prdname, index) => (
+              <div className="d-flex flex-column gap-1">
+              
+                <small>{prdname.productlabel2}</small>
+                <small>{prdname.productlabel3}</small>
+                <small>{prdname.productlabel4}</small>
+                <small>{prdname.productlabel5}</small>
+              </div>
+            ))}
+          </AccordionDetails>
+        </Accordion>
+
         {product.map((prdname, index) => (
-          <div className="d-flex flex-column" key={index}>
+          <Typography sx={{ display: { xs: "none", md: "block" } }}>
             <h5>{prdname.productlabel1}</h5>
             <small>{prdname.productlabel2}</small>
             <small>{prdname.productlabel3}</small>
             <small>{prdname.productlabel4}</small>
             <small>{prdname.productlabel5}</small>
-          </div>
+          </Typography>
         ))}
       </Grid>
 
       <Grid
         item
-        className="  d-flex flex-column"
+        className="  d-flex flex-column "
         gap={6}
-       xl={2}
-       lg={2}
-       md={4}
-       sm={4}
-       xs={4}
-
+        xl={2}
+        lg={2}
+        md={2}
+        sm={3}
+        xs={12}
       >
+        <Accordion sx={{ display: { md: "none" } }}>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+          >
+            <Typography>PRODUCT</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            {otherdata.map((otheerData, index) => (
+              <div className="d-flex flex-column  gap-1">
+                <small>{otheerData.termmofUse}</small>
+                <small>{otheerData.privacy}</small>
+                <small>{otheerData.cookies}</small>
+                <small>{otheerData.license}</small>
+              </div>
+            ))}{" "}
+          </AccordionDetails>
+        </Accordion>
+
         {otherdata.map((otheerData, index) => (
-          <div className="d-flex flex-column">
+          <Typography sx={{ display: { xs: "none", md: "block" } }}>
             <h5>{otheerData.other}</h5>
             <small>{otheerData.termmofUse}</small>
             <small>{otheerData.privacy}</small>
             <small>{otheerData.cookies}</small>
             <small>{otheerData.license}</small>
-          </div>
+          </Typography>
         ))}
       </Grid>
       <Grid
@@ -251,17 +286,39 @@ const BottomFooter = () => {
         gap={6}
         xl={2}
         lg={2}
-        md={4}
-        sm={4}
-        xs={4}
+        md={2}
+        sm={3}
+        xs={12}
       >
+        <Accordion sx={{ display: { md: "none" },
+        
+         }} >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+          >
+            <Typography> HELP</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              {help.map((helpData, index) => (
+                <div className="d-flex flex-column gap-1" >
+                  <small>{helpData.faq}</small>
+                  <small>{helpData.knowledge}</small>
+                  <small>{helpData.contact}</small>
+                </div>
+              ))}
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
         {help.map((helpData, index) => (
-          <div>
+          <Typography sx={{ display: { xs: "none", md: "block" } }}>
             <h5>{helpData.title}</h5>
             <small>{helpData.faq}</small>
             <small>{helpData.knowledge}</small>
             <small>{helpData.contact}</small>
-          </div>
+          </Typography>
         ))}
       </Grid>
     </Grid>

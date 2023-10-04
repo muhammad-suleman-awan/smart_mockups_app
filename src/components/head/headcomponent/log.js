@@ -27,7 +27,7 @@ const Piclogo = () => {
             maxWidth: { xl: 500, xs: 75, md: 150, sm:150 },
             paddingLeft: { xl: "1.5vw", lg: 2 },
             marginRight: { xl: 0 },
-            top: { xl: 2, lg:"-5px", md: "-5px", sm: "-2px", xs:"5px" },
+            top: { xl: 2, lg:"-5px", md: "-5px", sm: "-2px", xs:"10px" },
             left: { xl: 15, md: "15px", sm: "10px",xs:"10px" },
           }}
           src={minilogo}

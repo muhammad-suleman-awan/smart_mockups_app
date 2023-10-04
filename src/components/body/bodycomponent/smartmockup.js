@@ -31,21 +31,21 @@ const Smartmockup = () => {
       container
       lg={12}
       justifyContent={"center"}
-      sx={{ marginTop: "140px", marginBottom: "5%" }}
+      sx={{  marginBottom: "5%" }}
       // className="border border-info     "
-      gap={5}
+      gap={3}
+       
     >
       <Grid
         item
-        className=" col-xl-12 d-flex justify-content-center flex-column
+        className=" col-xl-12 col-md-12 d-flex justify-content-center flex-column 
         
          "
       >
         <Typography
-          className="col-xl-12 col-lg-12  d-flex justify-content-center py-5 "
-          sx={{
+          className="col-xl-12 col-lg-12  d-flex justify-content-center pt-5 "          sx={{
             textTransform: { xl: "uppercase" },
-            marginBottom: { xl: "8px" },
+             
             display: { xl: "block" },
             color: "#a7a7a7",
             fontWeight: { xl: "400" },
@@ -57,12 +57,10 @@ const Smartmockup = () => {
           SMARTMOCKUPS LEARNING LIBRARY
         </Typography>
         <Typography
-          className="col-xl-12 col-lg-12 d-flex"
+          className="col-xl-12 col-lg-12 d-flex pt-2 mb-3 px-1"
           variant="h2"
-          sx={{
-            marginBottom:"80px" ,
-            fontSize:"2.4em" ,
-            lineHeight:"1.333333333em",
+          sx={{ 
+            fontSize:"1.3em" ,
             fontWeight:"700" ,
             justifyContent: "center",
             textAlign: "center",
@@ -111,6 +109,7 @@ const Smartmockup = () => {
               marginBlockStart: "1em",
               marginBlockEnd: "1em",
               display: "block",
+              textAlign:"justify"
             }}
           >
             {data.title}

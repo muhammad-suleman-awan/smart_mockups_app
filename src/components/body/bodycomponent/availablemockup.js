@@ -48,7 +48,7 @@ const Availablemockup = () => {
     <Grid
       container
       sx={{
-        marginTop: { md: "150px" },
+        marginTop: { md: "150px", xs:"100px" },
         overflow: "auto",
         // backgroundColor: {
         //   xl: "oragnge",
@@ -81,8 +81,8 @@ const Availablemockup = () => {
           variant="h2"
           className="d-flex justify-content-center "
           sx={{
-            marginBottom: { xl: "80px" },
-            fontSize: "2.4em",
+            marginBottom: "80px",
+            fontSize: "1.8em",
             lineHeight: "1.33333333em",
             fontWeight: "700",
             textAlign: "center",
@@ -94,7 +94,7 @@ const Availablemockup = () => {
         </Typography> 
       </Grid>
 
-      <Grid item  xl={8} lg={12}  xs={12} className="overflow-auto  "
+      <Grid item  xl={8} lg={12}  xs={12} className="overflow-auto px-3 "
        sx={{
         display:{xs:"flex", },
         flexDirection:{xs:"row",sm:"row"},
@@ -104,7 +104,7 @@ const Availablemockup = () => {
          {imagesofavaiablemockup.map((item) => (
           <img
             srcSet={`${item.image}`}
-            className="col-lg-3 p-3 col-md-6 col-4 "
+            className="col-lg-3 p-1 col-md-6 col-4 "
           />
         ))} 
 
@@ -113,19 +113,17 @@ const Availablemockup = () => {
 
 
 
-      <Grid item xl={9} lg={9}  xs={12} className="d-flex justify-content-center py-5  ">
-        <Button
-          variant="outlined"
+      <Grid item xs={12} className="d-flex justify-content-center py-5  px-3">
+        <Button 
           sx={{
-            background: { xl: "#00bd28" },
-            color: { xl: "#fff" },
-            fontSize: { xl: "1rem" },
-            padding: { xl: "12px 0px" },
-            lineHeight: { xl: "1.5" },
-            width: { xl: "24%" },
+            background: "#00bd28",
+            color: "#fff",
+            
           }}
         >
-          <Typography sc={{}}> 👉 Create your first website mockup</Typography>
+          <Box component="span" sx={{    fontSize:  "1rem" ,
+            padding:   "12px 0px" ,
+            lineHeight: "1.5" }} className="p-0"> 👉 Create your first website mockup</Box>
         </Button>
         
  

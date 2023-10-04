@@ -30,12 +30,13 @@ const ButtonHeader = () => {
   ];
 
   return (
-    <div className="d-flex flex-column   overflow-auto  ">
+    <div className="d-flex flex-column   overflow-auto   ">
       <Grid
         container
         sx={{
-          paddingTop: { xl: 1.5, lg: 2 },
-          paddingLeft: { xl:6 },
+          paddingLeft: { xl:6 }, 
+          py:{xl:1.5, sm:1.5, xs:2},
+          px:{xs:2}
           // justifyContent: { lg: "center" },
         }}
       >
