@@ -16,9 +16,15 @@ const Guidemockup = () => {
       justifyContent={"center"}
       mt={5}
       mb={5}
-      sx={{}}
+      // sx={{     backgroundColor: {
+      //      lg: "pink",
+      //       xl: "green",
+      //       md: "orange",
+      //       sm: "blue",
+      //       xs: "black",}
+      // }}
     >
-      <Grid item className=" col-xl-8   col-lg-8 ">
+      <Grid item className=" col-xl-8  col-lg-12 ">
         <Typography
           className="col-xl-12 pt-5 d-flex justify-content-center"
           sx={{
@@ -49,10 +55,10 @@ const Guidemockup = () => {
 
       <Grid
         item
-        className="d-flex justify-items-center justify-content-center px-5  "
+        className="d-flex  justify-items-center justify-content-center px-5  "
         gap={{ xl: 20, lg: 5, md: 12, sm: 8, xs: 35 }}
         xl={8}
-        lg={8}
+        lg={12}
         md={12}
         sm={12}
         xs={12}

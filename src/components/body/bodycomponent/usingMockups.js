@@ -8,7 +8,7 @@ const Mockupusing = () => {
   return (
     <Grid
       container
-      className="d-flex flex-row px-5"
+      className="d-flex flex-row px-2  "
       gap={4}
       sx={{ marginTop: { lg: "140px" }, justifyContent: { xl: "center" , lg:"center"},
       
@@ -21,7 +21,7 @@ const Mockupusing = () => {
       //   },
           }}
     >
-      <Grid item className="order-sm-1 order-lg-0 order-1" xl={4} lg={4}>
+      <Grid item className="order-sm-1 order-lg-0 order-1" xl={4} lg={7}>
         <Typography
           sx={{
             fontWeight: { xl: "400" },

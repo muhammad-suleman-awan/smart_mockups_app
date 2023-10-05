@@ -109,7 +109,6 @@ const Smartmockup = () => {
               marginBlockStart: "1em",
               marginBlockEnd: "1em",
               display: "block",
-              textAlign:"justify"
             }}
           >
             {data.title}

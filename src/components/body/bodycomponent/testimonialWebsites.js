@@ -59,8 +59,8 @@ const Testimonial = () => {
               lineHeight: "1.3em",
               display: "block",
               py:{md:"10px",sm:"0px"},
-              px:{md:"5px"},
-              textAlign:"justify"
+              px:{md:"5px"}, 
+              boxShadow:"0 20px 30px 0 rgba(0,0,0,.16)"
             }}
           >
             "As designers, we can talk a lot about product design, user
